@@ -226,6 +226,12 @@ svg:not(:root) {
 
 .inner-page .heading-title{
 	text-align:center;
+	padding: 0;
+    margin: 0;
+}
+
+.full-section-1.inner-page{
+ padding:40px 0;
 }
 
 .full-section-1 {
@@ -236,11 +242,6 @@ svg:not(:root) {
 .full-section-2 {
 	background: #fff;
 	padding-bottom: 55px;
-}
-
-.full-section-1.inner-page {
-	background-image: none;
-	background-color: #e3f3f9;
 }
 
 .section-1 .panel-body {
