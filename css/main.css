@@ -152,6 +152,7 @@ svg:not(:root) {
 
 .secondary-text {
 	text-align: left;
+	font-size:26px;
 }
 
 .navbar-wrapper .social-net label {
@@ -208,6 +209,7 @@ svg:not(:root) {
 .heading-title {
 	font-family: Monotype Corsiva;
 	font-style: italic;
+	margin-bottom: 10px;
 }
 
 .bg-white {
@@ -298,13 +300,20 @@ svg:not(:root) {
   display:         flex;
 }
 .section-info .row > [class*='col-'] {
-	 display: flex;
+   display: flex;
    flex-direction: column;
    position: relative;
    padding-bottom:45px;
    margin-top: 55px;
 }
 
+.section-info .panel-body p{
+	line-height:30px;
+}
+
+.btn{
+	font-weight: bold;
+}
 
 .section-info .btn{
  position: absolute;
@@ -356,9 +365,10 @@ svg:not(:root) {
 
 #myCarousel .carousel-caption {
 	z-index: 10;
-	left: 50px;
-    bottom: 15px;
-	padding:0;
+    left: 50px;
+    bottom: 30px;
+    padding: 0;
+    width: 550px;
 }
 
 #myCarousel .carousel-caption h1,
@@ -379,7 +389,7 @@ svg:not(:root) {
 
 #myCarousel .social-net {
 	float: right;
-	margin: 100px 50px 0 0;
+	margin: 140px 50px 0 0;
 }
 
 #myCarousel .social-net h4 {
