@@ -132,8 +132,27 @@ svg:not(:root) {
 
 #navbar {
 	position: relative;
-	background: #fcd424;
-	border-radius: 0 0 10px 10px;
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,fdfdfd+18,ededed+69,e7e7e7+100 */
+	background: #ffffff;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid #f7bc26;
+	border-radius:10px;
+}
+
+
+.navbar-nav {
+	float: none;
+    display: table;
+    margin: 0 auto;
 }
 
 .navbar-brand {
@@ -187,24 +206,10 @@ svg:not(:root) {
 .navbar-inverse {
 	background: none;
 	border: none;
+	margin-top: -6px;
 }
 
-.navbar-nav {
-	border: 1px solid #f7bc26;
-	border-radius: 10px;
-	width: 100%;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,fdfdfd+18,ededed+69,e7e7e7+100 */
-	background: #ffffff;
-	/* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%, #fdfdfd 18%, #ededed 69%, #e7e7e7 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7', GradientType=0);
-	/* IE6-9 */
-}
+
 
 .heading-title {
 	font-family: Monotype Corsiva;
@@ -266,6 +271,7 @@ svg:not(:root) {
 	padding: 0 0 0 5px;
 	background: #f9c425;
 	margin: 85px 0 0 0;
+	border-radius: 0;
 }
 
 .section-1 .panel-heading img {
@@ -579,7 +585,14 @@ footer .social-net .icon-ex-small svg {
   }
   .navbar-nav{
     background:none;
-    border:none;
+	border:none;
+	float: left;
+  }
+  .navbar-inverse{
+	  margin:0;
+  }
+  .container > .navbar-collapse{
+	  margin:35px 0 0 0;
   }
   .section-info .row{
     display:block;
