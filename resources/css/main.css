@@ -442,9 +442,7 @@ svg:not(:root) {
 	font-size: 12px;
 }
 
-
-
-.arrangment-detail {
+.arrangment-detail { 
 	background: #6f6f6f;
 	text-align: center;
 	font-size: 28px;
@@ -452,6 +450,8 @@ svg:not(:root) {
 	color: #fff;
 	padding: 15px 0;
 }
+
+
 
 footer {
 	background: #f0f0f0;
