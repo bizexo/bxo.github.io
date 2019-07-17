@@ -77,6 +77,11 @@ a.btn {
 	margin-top: 15px;
 }
 
+.logo{
+	width:300px;
+	margin:25px auto;
+}
+
 .nav li.show-small {
 	display: none;
 }
@@ -144,7 +149,7 @@ svg:not(:root) {
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7', GradientType=0);
 	/* IE6-9 */
-	border: 1px solid #f7bc26;
+	border: 1px solid #58c1fd;
 	border-radius:10px;
 }
 
@@ -332,7 +337,7 @@ svg:not(:root) {
 	width: 105px;
 	height: 105px;
 	border-radius: 50%;
-	background: #f7bc26;
+	background: #58c1fd;
 	display: table;
 	margin: 0 auto;
 }
@@ -451,7 +456,7 @@ svg:not(:root) {
 footer {
 	background: #f0f0f0;
 	padding: 35px 0 15px;
-	border-bottom: 10px solid #f7bc26;
+	border-bottom: 10px solid #58c1fd;
 }
 
 footer p {
@@ -481,7 +486,7 @@ ul.footer-li {
 }
 
 .footer-li li a:hover {
-	color:#f7bc26;
+	color:#58c1fd;
 }
 
 .footer-li li:last-child {
@@ -490,7 +495,7 @@ ul.footer-li {
 }
 
 .footer-li li.active a {
-	color: #f7bc26;
+	color: #58c1fd;
 }
 
 .footer-logo {
@@ -503,7 +508,7 @@ footer .social-net {
 }
 
 footer .social-net .icon-ex-small svg {
-	fill: #f7bc26;
+	fill: #58c1fd;
 }
 
 
