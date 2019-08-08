@@ -143,6 +143,10 @@ svg:not(:root) {
   margin-top: -6px;
   min-height: auto; }
 
+  .navbar-toggle{
+    margin:50px 0 15px 0;
+  }
+
 .heading-title {
   font-family: Monotype Corsiva;
   font-style: italic;
@@ -173,10 +177,13 @@ svg:not(:root) {
 .full-section-2 {
   background: #fff; }
 
+  .section-1{
+    margin-top: -127px;
+  }
 .section-1 .panel {
   background: none;
   border: none;
-  margin-top: -127px; }
+   }
 
 .section-1 .panel-heading {
   text-align: center;
@@ -436,6 +443,9 @@ footer .social-net .icon-ex-small svg {
     display: none; } }
 
 @media (max-width: 767px) {
+  .section-1 {
+    margin-top: 40px;
+}
   #myCarousel,
   .navbar-wrapper .social-net,
   .lg-logo {
@@ -443,7 +453,7 @@ footer .social-net .icon-ex-small svg {
   .sm-logo {
     top: -5px; }
   .sm-logo img {
-    width: 60%; }
+    width: 40%; }
   .navbar-collapse {
     margin-top: 30px; }
   .navbar-nav {
