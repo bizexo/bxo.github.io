@@ -158,18 +158,41 @@ svg:not(:root) {
 
 .inner-page.carousel,
 .inner-page.carousel .item {
-  height: 215px; }
+  height: 238px; }
 
 .inner-page .carousel-inner > .item > img {
-  height: auto; }
+  height: auto; 
+top:-60px;}
 
 .inner-page .heading-title {
   text-align: center;
   padding: 0;
   margin: 0; }
 
-.full-section-1.inner-page {
+  .inner-page .section-1{
+       margin-top:0;
+       padding:50px 0;
+  }
+
+  .inner-page .section-1 .panel-body{
+    padding: 10px 0 0px;
+  }
+
+  .highlighted{
+    color:#0000ff;
+  }
+  .designation{
+    display: block;
+    font-size: 14px;
+    color: #000;
+  }
+
+.full-section-1.inner-page, .full-section-3.inner-page {
   padding: 40px 0; }
+
+  .full-section-2.inner-page{
+    background: #f5f5f5;
+  }
 
 .full-section-1 {
   padding: 50px 0; }
@@ -258,7 +281,7 @@ svg:not(:root) {
   width: 105px;
   height: 105px;
   border-radius: 50%;
-  background: #f7bc26;
+  background: #0000ff;
   display: table;
   margin: 0 auto; }
 
@@ -324,10 +347,9 @@ svg:not(:root) {
 
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
+  top: -200px;
   left: 0;
   min-width: 100%;
-  height: 500px;
   z-index: -1; }
 
 .social-net ul {
@@ -352,10 +374,20 @@ svg:not(:root) {
   color: #fff;
   padding: 15px 0; }
 
+.info-li{
+  margin-top:15px;
+  padding-left: 15px;
+}
+
+.info-li li{
+  list-style: none outside ;
+  list-style-type: disc;
+}
+
 footer {
   background: #f0f0f0;
   padding: 35px 0 15px;
-  border-bottom: 10px solid #f7bc26; }
+  border-bottom: 10px solid #0000ff; }
 
 footer p {
   color: #333;
@@ -379,14 +411,14 @@ ul.footer-li {
   font-size: 14px; }
 
 .footer-li li a:hover {
-  color: #f7bc26; }
+  color: #0000ff; }
 
 .footer-li li:last-child {
   border: none;
   padding-right: 0; }
 
 .footer-li li.active a {
-  color: #f7bc26; }
+  color: #0000ff; }
 
 .footer-logo {
   width: 40%; }
@@ -396,7 +428,15 @@ footer .social-net {
   padding: 0; }
 
 footer .social-net .icon-ex-small svg {
-  fill: #f7bc26; }
+  fill: #0000ff; }
+
+footer .social-net ul li {
+  padding-left: 10px;
+}
+
+  address{
+    margin-top: 20px;
+  }
 
 .carousel-caption {
   padding: 30px;
