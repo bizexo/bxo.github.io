@@ -26,6 +26,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jquery.lightroom.css" rel="stylesheet">
   <link href="css/fontFace.css" rel="stylesheet">
 
 </head>
@@ -201,14 +203,56 @@
     </div>
   </div>
 
+  <div class="container">
+    
+        
+    <div id="jLightroom" class="jlr gray_out">
+       <a data-fancybox href="https://www.youtube.com/watch?v=wj_3COzLw3s" class="jlr_item">
+        <img class="img-responsive" src="images/gallery-1.jpg" alt="">
+							<div class="desc text-center">
+								<h2>Celebrity</h2>
+								<p class="category"><span>Sanskruti Balgude</span></p>
+							</div>
+      </a>
+      <a data-fancybox href="https://www.youtube.com/watch?v=wj_3COzLw3s" class="jlr_item">
+        <img class="img-responsive" src="images/gallery-2.jpg" alt="">
+							<div class="desc text-center">
+								<h2>Celebrity</h2>
+								<p class="category"><span>Sanskruti Balgude</span></p>
+							</div>
+      </a>
+      <a data-fancybox href="https://www.youtube.com/watch?v=wj_3COzLw3s" class="jlr_item">
+        <img class="img-responsive" src="images/gallery-3.jpg" alt="">
+							<div class="desc text-center">
+								<h2>Celebrity</h2>
+								<p class="category"><span>Sanskruti Balgude</span></p>
+							</div>
+      </a>
+      <a data-fancybox href="https://www.youtube.com/watch?v=wj_3COzLw3s" class="jlr_item">
+        <img class="img-responsive" src="images/gallery-4.jpg" alt="">
+							<div class="desc text-center">
+								<h2>Celebrity</h2>
+								<p class="category"><span>Sanskruti Balgude</span></p>
+							</div>
+      </a>
+
+       
+    </div>
+  
+
+
+</div>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12">
-          <a href="#">
-            <img class="footer-logo" src="images/CastlenNest-logo.png" alt="CastlenNest">
-          </a>
+          <div class="logo"><a href="index.html"><i class="icon icon-medium">
+            <svg focusable="false">
+              <use xlink:href="#icon_logo"></use>
+            </svg>
+          </i>CastlenNest</a></div>
         </div>
 
 
@@ -272,13 +316,25 @@
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
 
-  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/ytpPlayer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
   <script src="js/misc.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+ 
   <script src="svg/svg.js"></script>
-
-
+ 
+  <script type="text/javascript">
+    $("#jLightroom").lightroom({
+        image_container_selector: ".jlr_item",
+        img_selector: "img.jlr_img",
+        img_class_loaded: "jlr_loaded",
+        img_space: 5,
+        img_mode: 'min',
+        init_callback: function(elem){$(elem).removeClass("gray_out")}
+    }).init();
+</script>
+ <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
