@@ -1,428 +1,343 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CastlenNest Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!DOCTYPE html>
+<html lang="en">
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="images/CastlenNest-logo.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+  <title>CastlenNest</title>
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
 
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fontFace.css" rel="stylesheet">
 
-	</head>
-	<body>
-		
-	<div class="colorlib-loader"></div>
+</head>
+<!-- NAVBAR
+================================================== -->
 
-	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2 col-md-push-5 text-center">
-							<div id="colorlib-logo"><a href="index.html"><i class="icon-camera4"></i>CastlenNest</a></div>
-						</div>
-						<div class="col-md-5 col-md-pull-2 text-right menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="gallery.html">Gallery</a>
-									<ul class="dropdown">
-										<li><a href="#">Gallery 1</a></li>
-										<li><a href="#">Gallery 2</a></li>
-										<li><a href="#">Gallery 3</a></li>
-										<li><a href="#">Gallery 4</a></li>
-									</ul>
-								</li>
-								<li><a href="services.html">Services</a></li>
-							</ul>
-						</div>
-						<div class="col-md-5 text-left menu-1">
-							<ul>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
+<body>
+  <nav class="nav" role="navigation">
+     <div class="top-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-md-push-5 text-center">
+            <div class="logo"><a href="index.html"><i class="icon icon-medium">
+              <svg focusable="false">
+                <use xlink:href="#icon_logo"></use>
+              </svg>
+            </i>CastlenNest</a></div>
+          </div>
+          <div class="col-md-5 col-md-pull-2 text-right menu-1">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+                
+              </li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 text-left menu-1">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-		<section id="home" class="video-hero" style="height: 800px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
-		<div class="overlay"></div>
-			<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=wj_3COzLw3s',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a> 
-			<div class="display-t text-center">
-				<div class="display-tc">
-					<div class="container">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="animate-box">
-								<h1 class="holder"><span>Fashion Photoshoot</span></h1>
-								<h2>Classy Rebel Fashion Photoshoot</h2>
-								<p>27.03.2018</p>
-								<p><a href="gallery.html" class="btn btn-primary btn-custom">View Gallery</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=wj_3COzLw3s',containment:'#myCarousel', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default', coverImage:'images/home-cover-img.jpg'}"></div>
 
-		<div id="colorlib-services">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-camera4"></i>
-							</span>
-							<div class="desc">
-								<h3>Video Production</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-image2"></i>
-							</span>
-							<div class="desc">
-								<h3>Post  Production</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-video3"></i>
-							</span>
-							<div class="desc">
-								<h3>Motion Graphics</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="colorlib-about-flex">
-			<div class="col-half about-flex-img animate-box" style="background-image: url(images/about.jpg);"></div>
-			<div class="col-half">
-				<div class="row">
-					<div class="col-md-12 col-md-pull-2 animate-box">
-						<div class="about-desc">
-							<h2>We Are CastlenNest</h2>
-							<p>
-								<b>Manipulate and edit film pieces in a way that is invisible to the audience</b>
-							</br>
-								- Take a brief to grasp production team’s needs and specifications
-								- Review shooting script and raw material to create a shot decision list based on scenes’ value and contribution to continuity
-								- Trim footage segments and put together the sequence of the film
-								- Input music, dialogues, graphics and effects
-								- Create rough and final cuts
-								- Ensure logical sequencing and smooth running
-								- Consult with stakeholders from production to post-production process
-								- Continuously discover and implement new editing technologies and industry’s best practices to maximize efficiency.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="caption animated bounce">
+        <div class="display-t text-center">
+            <div class="display-tc">
+              <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 class="holder"><span>Fashion Photoshoot</span></h1>
+                    <h2>Classy Rebel Fashion Photoshoot</h2>
+                    <p>27.03.2018</p>
+                    <p><a href="gallery.html" class="btn btn-primary btn-custom">View Gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
-		<div class="colorlib-gallery">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Gallery</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 no-gutters">
-						<a href="images/gallery-1.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-1.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-						<a href="images/gallery-2.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-2.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Jacket</span> <span>Woman</span></p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 no-gutters">
-						<a href="images/gallery-3.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-3.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Jacket</span> <span>Male</span></p>
-							</div>
-						</a>
-						<a href="images/gallery-4.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-4.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 no-gutters">
-						<a href="images/gallery-5.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-5.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-						<a href="images/gallery-6.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-6.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 no-gutters">
-						<a href="images/gallery-7.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-7.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-						<a href="images/gallery-8.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="images/gallery-8.jpg" alt="">
-							<div class="desc text-center">
-								<h2>Fashion be like</h2>
-								<p class="category"><span>Fashion</span></p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="colorlib-blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Recent Blog</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);"></a>
-							<div class="desc">
-								<h2><a href="blog.html">Photoshoot Technique</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span class="day"><i class="icon-calendar"></i> 30 March 2018</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);"></a>
-							<div class="desc">
-								<h2><a href="blog.html">Some tricks in Photoshop for your photo</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span class="day"><i class="icon-calendar"></i> 30 March 2018</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);"></a>
-							<div class="desc">
-								<h2><a href="blog.html">50 Effects in Photoshop</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span class="day"><i class="icon-calendar"></i> 30 March 2018</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div>
+  </div><!-- /.carousel -->
 
-		<div id="colorlib-instagram">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 colorlib-heading text-center animate-box">
-					<h2><i class="icon-instagram"></i> Instagram</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="instagram-entry animate-box">
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-1.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-2.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-3.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-4.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-5.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-6.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-7.jpg);">
-					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/insta-8.jpg);">
-					</a>
-				</div>
-			</div>
-		</div>
-		<footer id="colorlib-footer">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
-						<h4>About CastlenNest</h4>
-						<p>CastlenNest has most Experienced and Enthusiastic Video Maker's in our team and because of that we have power to make your Video dream come true.</p>
-						<p>
-							<ul class="colorlib-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							</ul>
-						</p>
-					</div>
-					<div class="col-md-3 colorlib-widget">
-						<h4>Information</h4>
-						<p>
-							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> Home</a></li>
-								<li><a href="#"><i class="icon-check"></i> Gallery</a></li>
-								<li><a href="#"><i class="icon-check"></i> About</a></li>
-								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
-							</ul>
-						</p>
-					</div>
+  <section class="full-section-1">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h1 class="heading-title"><span class="hightlighted">"</span>We Provide Quality Service at its Finest<span class="hightlighted">"</span></h1>             
+                 </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p>
+                  <b>CastlenNest Homecare and Concierge</b> is a premiere homecare and concierge agency offering unique services to each individual request. We provide the invaluable gift of time to ensure balance in the lives of every client. We provide quality service at its finest is our promise to provide excellence in all areas of service delivery. Allow CastlenNest Homecare and Concierge to provide the invaluable gift of time and provide quality service at its finest.
+              </br></br>
+An organizations most valuable asset are its individuals and employees. Providing work-life balance reduces absenteeism , lack of productivity, as well as high turnover. We offer highly skilled career professionals in home healthcare. We are established in client support including assessment and education regarding all facets of home health care delivery. We provide quality service at its finest and give the invaluable gift of time.</p>
+             </div>
 
-					<div class="col-md-3 colorlib-widget">
-						<h4>Recent Blog</h4>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Photoshoot Technique</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Camera Lens Shoot</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">CastlenNest the biggest photography studio</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-					</div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <div class="row bg-white">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <img class="inner-img" src="images/img-7.jpg">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="inner-img" src="images/img-7-1.jpg">
+                      </div>
+               </div>
+              </div>
 
-					<div class="col-md-3 colorlib-widget">
-						<h4>Contact Info</h4>
-						<ul class="colorlib-footer-links">
-							<li>Flat No.3 1st Floor Sai Sparsh Appt,<br>
-									Jambulwadi Road. Ambegoan Bk. pune</li>
-							<li><a href="tel://8975174909"><i class="icon-phone"></i> 8975174909/ 8412061200</a></li>
-							<li><a href="mailto:castlennest@gmail.com"><i class="icon-envelope"></i> castlennest@gmail.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> www.castlennest.com</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="copy">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								<small class="block"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small><br> 
-								<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a></small>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
+        </div>
+      </div>
+    </section>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- YTPlayer -->
-	<script src="js/jquery.mb.YTPlayer.min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
 
-	</body>
+    <section class="full-section-2">
+        <div class="container">
+        <!-- Three columns of text below the carousel -->
+        <div class="row section-1">
+          <div class="col-lg-4 col-md-4 col-sm-12 ">
+              <div class="panel-heading">
+                  <img src=images/img-1.jpg>
+                  <div class="panel-body">
+                      <a href="#" class="read-more-btn">Our Homecare <span class="hightlighted">Aids
+                      </span></a>
+                    </div>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 ">
+              <div class="panel-heading">
+                  <img src=images/img-2.jpg>
+                  <div class="panel-body">
+                      <a href="#" class="read-more-btn">Our <span class="hightlighted">Expertise
+                      </span></a>
+                    </div>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 ">
+              <div class="panel-heading">
+                  <img src=images/img-3.jpg>
+                  <div class="panel-body">
+                      <a href="#" class="read-more-btn">Our Professional <span class="hightlighted">Staff
+                      </span></a>
+                    </div>
+                </div>
+          </div>
+        
+        </div><!-- /.row -->
+      </div>
+      </section>
+
+  <section class="container section-info">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="panel-heading">
+              <h5>Corporate Concierge</h5>
+              <div class="icon-circle">
+                  <i class="icon icon-medium">
+                      <svg focusable="false">
+                        <use xlink:href="#icon_corporate"></use>
+                      </svg>
+                    </i>
+              </div>
+            </div>
+        <div class="panel-body">
+          <p>Personal Shopping<br>
+              (DMV) automobile license renewal stickers<br>
+              Book Appointments<br>
+              Postal Services/UPS/Fed-Ex/DHL<br>
+              Birthday Shopping<br>
+              Dry Cleaning Drop-off/Pick-up</p>
+          <a href="#" class="btn btn-default">Know more</a>
+        </div>
+       
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 divider">
+          <div class="panel-heading">
+              <h5>Home Care Services</h5>
+              <div class="icon-circle">
+                  <i class="icon icon-medium">
+                      <svg focusable="false">
+                        <use xlink:href="#icon_homeCareServices"></use>
+                      </svg>
+                    </i>
+              </div>
+            </div>
+        <div class="panel-body">
+          <p>Companionship<br>
+              Oversee Home Deliveries<br>
+              Arrange Appointments<br>
+              Arrange Transportation<br>
+              Prescription Drop-off/Pick-up<br>
+              Write Letter and Correspondence</p>
+          <a href="#" class="btn btn-default">Know more</a>
+        </div>
+       
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="panel-heading">
+              <h5>CastlenNest Management</h5>
+              <div class="icon-circle">
+                  <i class="icon icon-medium">
+                      <svg focusable="false">
+                        <use xlink:href="#icon_CastlenNestManagement"></use>
+                      </svg>
+                    </i>
+              </div>
+            </div>
+        <div class="panel-body">
+          <p>Corporate Management<br>
+              Home Care Management<br>
+              Other Services<br>
+              Lifestyle Management<br>
+              Innovative services</p>
+          <a href="#" class="btn btn-default">Know more</a>
+        </div>
+       
+      </div>
+
+    </div><!-- /.row -->
+  </section>
+
+
+  <section class="full-section-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h4>About CastlenNest Homecare & Concierge</h4>             
+                 </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+              <p>
+                  At CastlenNest Homecare and Concierge, LLC. we are in the business of giving our clients the invaluable gift of time. By providing innovative services leading non-medical personal home care, lifestyle management, and corporate concierge, we offer simple solutions to life’s demands.
+              </br></br>
+Tell us what you need and we will do the rest! Our network of service providers allows us to offer our clients personalized attention, innovative services, and time saving convenience. A single request of CastlenNest Homecare and Concierge relieves clients of daily demands of social, family, and business obligations. Our purpose is to provide balance in the lives of our clients.
+              </p>
+              
+              <a href="#" class="btn btn-default">Know More</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 arrangment-detail">
+                <b>All Arrangement</br>
+as per your Requirement</b></br></br>
+For details call us on</br>
+Phone : (803) 486 - 2520</br>
+Fax : (803) 815 - 1308</br>
+              </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <a href="#">
+                <img class="footer-logo" src="images/CastlenNest-logo.png" alt="CastlenNest">
+              </a>
+            </div>
+    
+         
+    
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                
+                <p>
+                    Email : info@CastlenNesthc.com</br>
+                    Phone : (803) 486-2520</br>
+                    Fax :  (803) 815-1308</br>
+                </p>
+              </div>
+
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                
+                 
+                  <div class="social-net">
+        
+                      <ul>
+                          <li><a href="https://www.facebook.com" target="_blank">
+                            <i class="icon icon-ex-small">
+                              <svg focusable="false">
+                                <use xlink:href="#icon_facebook"></use>
+                              </svg>
+                            </i>
+                          </a>
+                          </li>
+                      </ul>
+                    </div>
+
+                    <ul class="footer-li">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                            <a href="aboutus.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="services.html">Services</a>
+                          </li>
+                          <li>
+                            <a href="contactUs.html">Contact Us</a>
+                          </li>
+                     </ul>
+  
+                    <p class="copyright">
+                        Copyright © 2018 CastlenNest Homecare & Concierge.  All right reserved.<br>
+                    </p>
+  
+  
+                </div>
+    
+    
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  
+  <script src="js/main.js"></script>
+  <script src="js/ytpPlayer.js"></script>
+  <script src="js/misc.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="svg/svg.js"></script>
+  
+
+</body>
+
 </html>
-
