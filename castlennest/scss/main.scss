@@ -609,7 +609,7 @@ svg:not(:root) {
 	  vertical-align: middle;
   
 	  .holder {
-		color: #fff;
+		color: #FFDD00;
 		font-family: "Josefin Sans", Arial, sans-serif;
 		font-size: 18px;
 		text-transform: uppercase;
@@ -623,7 +623,7 @@ svg:not(:root) {
 			top: 49%;
 			width: 100px;
 			height: 2px;
-			background: #fff;
+			background: #FFDD00;
 			content: '';
 		  }
   
@@ -756,30 +756,31 @@ ul.footer-li {
 	clear: both;
 }
 
-.footer-li li {
-	padding: 0 10px;
-	float: left;
-	border-right: 1px solid #333333;
-	line-height: 12px;
+.footer-li {
+	li {
+		padding: 0 10px;
+		float: left;
+		border-right: 1px solid #333333;
+		line-height: 12px;
+		a {
+			color: #444444;
+			font-size: 14px;
+			&:hover { 
+				color: #f7bc26;
+			}
+		}
+		&:last-child {
+			border: none;
+			padding-right: 0;
+		}
+		&.active {
+			a {
+				color: #f7bc26;
+			}
+		}
+	}
 }
 
-.footer-li li a {
-	color: #444444;
-	font-size: 14px;
-}
-
-.footer-li li a:hover {
-	color:#f7bc26;
-}
-
-.footer-li li:last-child {
-	border: none;
-	padding-right: 0;
-}
-
-.footer-li li.active a {
-	color: #f7bc26;
-}
 
 .footer-logo {
 	width: 75%;
@@ -801,6 +802,10 @@ footer .social-net .icon-ex-small svg {
 .copyright {
 	color: #010a4f;
 	float: right;
+	clear: both;
+	a{
+		float:right;
+	}
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
