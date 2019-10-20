@@ -846,10 +846,25 @@ footer {
 	float: right;
 	clear: both;
 	a{
+		margin-top:10px !important;
 		float:right;
 		color: #dddddd;
 		&:hover{
 			color: #f7bc26; 
+			svg{
+				fill:#f7bc26;
+			}
+		}
+			}
+	span{
+		float: left; 
+		margin-right:10px;
+	}
+	i{
+		margin-top: -25px;
+		float: left;
+		svg{
+			fill:#fff;
 		}
 	}
 }

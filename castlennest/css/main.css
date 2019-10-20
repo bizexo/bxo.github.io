@@ -645,10 +645,21 @@ footer a {
   float: right;
   clear: both; }
   .copyright a {
+    margin-top: 10px !important;
     float: right;
     color: #dddddd; }
     .copyright a:hover {
       color: #f7bc26; }
+      .copyright a:hover svg {
+        fill: #f7bc26; }
+  .copyright span {
+    float: left;
+    margin-right: 10px; }
+  .copyright i {
+    margin-top: -25px;
+    float: left; }
+    .copyright i svg {
+      fill: #fff; }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .nav > li > a {
