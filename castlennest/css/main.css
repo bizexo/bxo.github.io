@@ -261,8 +261,22 @@ svg:not(:root) {
     display: none; } }
 
 .full-section-2 {
-  background: #fff;
+  background-color: #1f1f1f;
   padding-bottom: 55px; }
+
+.services {
+  text-align: center; }
+  .services h2, .services h5 {
+    color: #ffffff; }
+  .services h2 {
+    font-family: amatic_scregular; }
+  .services h5 {
+    margin: 30px 0;
+    font-family: josefin_sansregular; }
+  .services i {
+    display: block; }
+    .services i svg {
+      fill: #ffab00; }
 
 .section-1 .panel-body {
   border: none;
@@ -355,7 +369,8 @@ svg:not(:root) {
   font-size: 1rem;
   display: inline-block;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  height: 199px; }
   .jlr .jlr_item .desc {
     position: absolute;
     top: 40%;
@@ -389,7 +404,8 @@ svg:not(:root) {
     z-index: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    height: 210px; }
   .jlr .jlr_item img {
     display: block;
     position: relative;
@@ -570,13 +586,18 @@ svg:not(:root) {
   padding: 15px 0; }
 
 footer {
-  background: #f0f0f0;
+  background: #2b2b2b;
   padding: 35px 0 15px;
-  border-bottom: 10px solid #f7bc26; }
-
-footer p {
-  color: #333;
-  font-size: 14px; }
+  border-bottom: 10px solid #1f1f1f; }
+  footer p {
+    color: #333;
+    font-size: 14px; }
+  footer .social-net ul li {
+    margin-left: 10px; }
+  footer .logo {
+    margin-top: 15px; }
+    footer .logo svg {
+      fill: #f7bc26; }
 
 ul.footer-li {
   list-style: none inside;
@@ -591,7 +612,7 @@ ul.footer-li {
   border-right: 1px solid #333333;
   line-height: 12px; }
   .footer-li li a {
-    color: #444444;
+    color: #dddddd;
     font-size: 14px; }
     .footer-li li a:hover {
       color: #f7bc26; }
@@ -611,15 +632,23 @@ footer .social-net {
 footer .social-net .icon-ex-small svg {
   fill: #f7bc26; }
 
-.hightlighted {
-  color: #c90303; }
+footer address {
+  color: #dddddd; }
+
+footer a {
+  color: #dddddd; }
+  footer a:hover {
+    color: #f7bc26; }
 
 .copyright {
-  color: #010a4f;
+  color: #dddddd;
   float: right;
   clear: both; }
   .copyright a {
-    float: right; }
+    float: right;
+    color: #dddddd; }
+    .copyright a:hover {
+      color: #f7bc26; }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .nav > li > a {
@@ -643,9 +672,7 @@ footer .social-net .icon-ex-small svg {
     display: none; } }
 
 @media (max-width: 767px) {
-  #myCarousel,
-  .navbar-wrapper .social-net,
-  .lg-logo {
+  .caption .display-tc .holder span:before, .caption .display-tc .holder span:after {
     display: none; }
   .sm-logo {
     top: -5px; }
@@ -665,9 +692,11 @@ footer .social-net .icon-ex-small svg {
     display: block; }
   .section-info .divider {
     border: none; }
-  footer p {
+  footer p, footer address, footer .logo {
     text-align: center; }
-  ul.footer-li, footer .social-net, .copyright, .footer-logo {
+  footer [class*='col-'] {
+    margin-bottom: 30px; }
+  ul.footer-li, footer .social-net, .copyright, .footer-logo, .copyright a {
     float: none;
     margin: auto;
     display: table; } }
