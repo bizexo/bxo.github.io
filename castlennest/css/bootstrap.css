@@ -2252,23 +2252,23 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #c90303;
+  color: #000;
   background-color: #fff;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #c90303;
+  color: #000;
   background-color: #fff;
   border-color: #c6c6c6;
 }
 .btn-default:hover {
-  color: #c90303;
+  color: #000;
   border-color: #c6c6c6;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #c90303;
+  color: #000;
   border-color: #c6c6c6;
 }
 .btn-default:active:hover,
