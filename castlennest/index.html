@@ -35,6 +35,17 @@
 ================================================== -->
 
 <body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="event.html">Event</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="open-nav" onclick="openNav()">&#9776;</span>
   <nav class="nav" role="navigation">
     <div class="top-menu">
       <div class="container">
@@ -58,7 +69,7 @@
           </div>
           <div class="col-md-5 text-left menu-1">
             <ul>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="event.html">Event</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -95,7 +106,6 @@
       <div class="col-lg-4 col-md-4 col-sm-12 ">
         <div class="panel">
           <div class="panel-heading">
-            <h5>VIDEO CATEGERY</h5>
             <div class="icon-circle">
               <i class="icon icon-medium">
                 <svg focusable="false">
@@ -103,6 +113,7 @@
                 </svg>
               </i>
             </div>
+            <h5>VIDEO CATEGERY</h5>
           </div>
           <div class="panel-body">
             <p>
@@ -119,14 +130,14 @@
       <div class="col-lg-4 col-md-4 col-sm-12 divider">
         <div class="panel">
           <div class="panel-heading">
-            <h5>SERVICES</h5>
-            <div class="icon-circle">
+           <div class="icon-circle">
               <i class="icon icon-medium">
                 <svg focusable="false">
                   <use xlink:href="#icon_videoService"></use>
                 </svg>
               </i>
             </div>
+            <h5>SERVICES</h5>
           </div>
           <div class="panel-body">
             <p>Video production<br>
@@ -143,14 +154,14 @@
       <div class="col-lg-4 col-md-4 col-sm-12 ">
         <div class="panel">
           <div class="panel-heading">
-            <h5>SOFTWARE</h5>
-            <div class="icon-circle">
+             <div class="icon-circle">
               <i class="icon icon-medium">
                 <svg focusable="false">
                   <use xlink:href="#icon_videoSoftware"></use>
                 </svg>
               </i>
             </div>
+            <h5>SOFTWARE</h5>
           </div>
           <div class="panel-body">
             <p>Final cut pro<br>
@@ -166,9 +177,14 @@
   </section>
 
 
+    
+
+
+
   <div class="about-cn">
     <div class="col-half about-cn-img animate-box fadeInUp animated-fast"
-      style="background-image: url(images/about.jpg);"></div>
+      style="background-image: url(images/about.jpg);">
+    </div>
     <div class="col-half">
       <div class="row">
         <div class="col-md-12 col-md-pull-2 animate-box fadeInUp animated-fast">
@@ -513,6 +529,16 @@
   <script src="js/misc.js"></script>
 
   <script src="svg/svg.js"></script>
+
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
 
   <script type="text/javascript">
     $("#jLightroom").lightroom({
