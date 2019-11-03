@@ -37,15 +37,24 @@
 <body>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="icon icon-ex-small">
+          <svg focusable="false">
+            <use xlink:href="#icon_close"></use>
+          </svg>
+        </i></a>
+        <a class="active" href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="services.html">Services</a>
         <a href="event.html">Event</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <span class="open-nav" onclick="openNav()">&#9776;</span>
+      <span class="open-nav" onclick="openNav()"> <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_humbergerMenu"></use>
+        </svg>
+      </i></span>
   <nav class="nav" role="navigation">
     <div class="top-menu">
       <div class="container">
@@ -91,7 +100,7 @@
               <h1 class="holder"><span>A Creative Shooting Studio</span></h1>
               <h2>Classy Rebel Photoshoot</h2>
               <p>Make Memories With Us</p>
-              <p><a href="gallery.html" class="btn btn-primary btn-custom">Hire Us Now</a></p>
+              <p><a href="contact.html" class="btn btn-primary btn-custom">Hire Us Now</a></p>
             </div>
           </div>
         </div>

@@ -85,6 +85,12 @@ var svgIcons = `
  <path d="M11870 451 c-13 -25 -13 -28 4 -28 8 0 13 10 12 24 -1 28 -2 28 -16 4z"/>
  </g>
 </symbol>
+<symbol id="icon_humbergerMenu" viewBox="0 0 48 48">
+<path d="M0 0h48v48h-48z" fill="none"/><path d="M6 36h36v-4h-36v4zm0-10h36v-4h-36v4zm0-14v4h36v-4h-36z"/>
+</symbol>
+<symbol id="icon_close" viewBox="0 0 20 20">
+<path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+</symbol>
 </defs>
         </svg>`
 $(document).ready(function () {
