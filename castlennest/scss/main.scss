@@ -56,6 +56,11 @@ $heading-scale: 8; // amount of px headings grow from h6 to h1
   }
 }
 
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 a.btn {
 	margin-top: 15px;
 }
@@ -84,12 +89,12 @@ a.btn {
 	a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 18px; 
 		color: #818181;
 		display: block;
 		transition: 0.3s;
-		&:hover {
-			color: #f1f1f1;
+		&.active, &:hover{
+			color:#FFDD00;  
 		}
 	}
 	.closebtn {
@@ -103,6 +108,9 @@ a.btn {
 	border-radius:5px;
 	padding: 1px 7px 6px; 
 	} 
+	svg{
+		fill:#fff;
+	}
 } 
 .open-nav{
 	position: absolute;
@@ -113,7 +121,10 @@ a.btn {
     color: #fff;
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: 5px 10px 2px;
+	padding: 5px 7px 5px;
+	svg{
+		fill:#fff;
+	}
 }
 
 
@@ -199,7 +210,7 @@ svg:not(:root) {
 	margin: 0 auto;
   
 	.top-menu {
-	  padding: 20px 30px;
+	  padding: 20px 30px 0px;  
 	}
   
 	.logo {
@@ -365,7 +376,7 @@ svg:not(:root) {
   
   @media screen and (max-width: 768px) {
 	.nav .top-menu {
-	  padding: 28px 1em;
+	  padding: 10px 0 0; 
 	}
   }
   
@@ -378,6 +389,13 @@ svg:not(:root) {
 .full-section-2 { 
 	background-color: #1f1f1f;
 	padding-bottom: 55px;
+}
+
+
+.inner-page{
+	&.carousel {
+		height: 400px;
+	}
 }
 
 .services{
@@ -398,6 +416,29 @@ svg:not(:root) {
 			 fill:#ffab00;
 		 }
 	 }
+}
+
+
+.title-image{
+	overflow: hidden;
+	height: 400px;
+	position:relative;
+	img{
+		width:100%;
+		top: -75px; 
+    	position: absolute;
+	}
+	.header-title{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		color: #000;
+		text-align: center;
+		display: table;
+		background: rgba(255,255,255, 0.5);
+		padding: 10px 0;
+		margin: 0;
+	}
 }
 
 .section-1 {
@@ -604,7 +645,8 @@ svg:not(:root) {
 	  width: 100%;
 	  padding: 1em; }
 	  .about-cn .col-half.about-cn-img {
-		height: 300px; } }
+		height: 300px;
+		background-position: -303px -165px; } }
 .about-cn .about-desc {
   background: #fff;
   padding: 3em; 
@@ -654,7 +696,21 @@ svg:not(:root) {
 	position: relative;
 	background-repeat: no-repeat;
 	z-index: 0;
-  
+	&.inner-page{
+		margin:10px 0 25px;
+				.display-t{
+					margin: 50px 0; 
+			h3{
+				font-family:amatic_scregular;
+				margin-top:10px;
+			}
+			height:auto;
+			 p{
+				 color:#000;
+				 letter-spacing: normal; 
+			 } 
+		}
+	}
 	.overlay {
 	  position: absolute;
 	  top: 0;
@@ -735,7 +791,58 @@ svg:not(:root) {
 	  }
 	}
   }
+
+  .sevices{
+	  margin-bottom:50px;
+	.nav-tabs {
+		border-bottom: 1px solid #f7bc26;
+		float: left;
+		width: 100%;
+		padding: 0 25px;
+		li {
+			a{
+				padding: 8px 10px 2px;
+				color:#f7bc26;
+				border-top: 2px solid transparent;
+				border-radius: 0;
+				&:hover{
+					border-color:#f7bc26; 
+				}
+			}
+			
+			&.active a{
+				background-color: #f5f5f5;
+			    border: 1px solid #f7bc26;  
+				border-bottom-color: transparent;
+				border-top: 2px solid #f7bc26;
+				color:#000;
+			}
+		}
+		}
+
+  }
+
+  .event-info{
+	h6{
+		color: #000;
+    font-family: amatic_scregular;
+    background: #ffdd00; 
+    font-weight: bold;
+    padding: 9px 10px 5px;
+    margin: 0 0 15px;
+	}
+	  img{
+		  width:100%;
+	  }
+	  .event-date{
+		  font-weight: bold;
+		  margin:10px 0;
+	  }
+  }
   
+  .mapouter{position:relative;text-align:right;height:400px;width:100%;}
+  .gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;} 
+
   @media screen and (max-width: 768px) {
 	.video-hero {
 	  height: inherit;
@@ -864,7 +971,19 @@ ul.footer-li {
 		}
 	}
 }
-
+.address{ 
+	p{
+		margin:15px 0;
+	}
+	.social-net {
+		li{
+			margin-right:10px; 
+		}
+		.icon-ex-small svg {
+			fill: #f7bc26;
+		}
+	}
+}
 
 .footer-logo {
 	width: 75%;
@@ -957,6 +1076,13 @@ footer {
 	.sidenav, .open-nav{  
 		display: block; 
 	}
+	.title-image img{
+		height:100%;
+		width:auto;
+		top:0px;
+		left: -70px;
+			}
+
 	.caption .display-tc .holder span:before, .caption .display-tc .holder span:after {
 		display: none;
 	}
