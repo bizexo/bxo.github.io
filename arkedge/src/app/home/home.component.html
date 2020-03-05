@@ -1,15 +1,17 @@
-<ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
-    <ng-template ngbSlide *ngFor="let img of images; index as i">
-        <div class="carousel-caption">
-            <h3>My slide {{i + 1}} title</h3>
-        </div>
-        <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
-            <div class="picsum-img-wrapper">
-                <img [src]="img" alt="My image {{i + 1}} description">
+<div class="main-banner">
+    <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let img of images; index as i">
+            <div class="carousel-caption">
+                <h3>My slide {{i + 1}} title</h3>
             </div>
-        </a>
-    </ng-template>
-</ngb-carousel>
+            <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+                <div class="picsum-img-wrapper">
+                    <img [src]="img" alt="My image {{i + 1}} description">
+                </div>
+            </a>
+        </ng-template>
+    </ngb-carousel>
+</div>
 <div class="container section-info">
     <div class="row">
         <div class="col-sm-12 center">
@@ -29,27 +31,27 @@
                 <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
                     <div class="panel">
                         <div class="panel-front {{item.color}}">
-                        <div class="panel-heading">
-                            <div class="icon-circle circle-bg">
-                                <i class="icon icon-medium">
-                                    <svg focusable="false">
-                                        <use attr.xlink:href="{{item.icon}}"></use>
-                                    </svg>
-                                </i>
+                            <div class="panel-heading">
+                                <div class="icon-circle circle-bg">
+                                    <i class="icon icon-medium">
+                                        <svg focusable="false">
+                                            <use attr.xlink:href="{{item.icon}}"></use>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <h5>{{item.title}}</h5>
                             </div>
-                            <h5>{{item.title}}</h5>
-                        </div>
-                        <div class="panel-body">
+                            <div class="panel-body">
 
-                            <p *ngFor="let data of item.list">{{data.name}}</p>
+                                <p *ngFor="let data of item.list">{{data.name}}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="panel-back {{item.color}}">
-                        <h5>{{item.title}}</h5>
-                        <p>{{item.description}}</p>
+                        <div class="panel-back {{item.color}}">
+                            <h5>{{item.title}}</h5>
+                            <p>{{item.description}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     </div>
@@ -68,25 +70,54 @@
                     we have developed solid understanding and insight in our focus industries that include:
                 </p>
             </div>
-                
+
             <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12">
                 <div class="panel">
-                <div class="panel-heading">
-                    <div class="icon-circle {{item.color}}">
-                        <i class="icon icon-medium">
-                            <svg focusable="false">
-                                <use attr.xlink:href="{{item.icon}}"></use>
-                            </svg>
-                        </i>
+                    <div class="panel-heading">
+                        <div class="icon-circle {{item.color}}">
+                            <i class="icon icon-medium">
+                                <svg focusable="false">
+                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <h5>{{item.title}}</h5>
                     </div>
-                    <h5>{{item.title}}</h5>
-                </div>
-                <div class="panel-body">
-                    <p>{{item.description}}</p>
+                    <div class="panel-body">
+                        <p>{{item.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section-projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>OUR <span class="heading-highlight">PROJECTS</span></h1>
+                <p>
+                    We bring powerful TOOLS for enhance your productivity.
+                </p>
+            </div>
         </div>
+        <div class="project-grid">
+            <li *ngFor="let info of projects; index as i" class="p2">
+                <a>
+                    <figure>
+                        <img src="{{info.imgPath}}-{{i + 1}}.jpg" alt="Experience">
+                        <div class="show-more-overlay"></div>
+                        <figcaption>
+                            <h2 class="show_more-title">{{info.title}}</h2>
+                            <p class="show_more-desc"> 
+                                {{info.description}}
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+     </div>
     </div>
 </section>
 
@@ -96,7 +127,9 @@
             <div class="col-sm-12 center">
                 <h1>HAPPY <span class="heading-highlight">CLIENTS</span></h1>
                 <p>
-                    consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                    consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo. Proin sodales pulvinar tempor.lacus accumsan et viverra justo
+                    commodo. Proin sodales pulvinar tempor.</p>
             </div>
 
         </div>
@@ -108,16 +141,17 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>TESTIMONIALS</h1>
-                <p>
-                    We ensure excellence in service through understanding of our client's business and their unique
-                    requirements.
+                <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let info of testimonials; index as i">
+                        <p>
+                            {{info.clientView}}
+                        </p>
+                        <p>
+                            - {{info.clientName}}
+                        </p>
 
-                    Due to our close relationships and constant interactions with clients,
-
-                    we have developed solid understanding and insight in our focus industries that include:
-                </p>
-
-                
+                    </ng-template>
+                </ngb-carousel>
 
             </div>
 

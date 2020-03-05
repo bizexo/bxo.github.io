@@ -92,6 +92,61 @@ export class HomeComponent {
 
   images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
+  testimonials = [
+    {
+      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientName: 'xyz Company'
+    },
+    {
+      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientName: 'ABC Company'
+    },
+    {
+      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientName: '123 Company'
+    },
+    {
+      clientView: ' We ensure excellence in service through understanding of our clients business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:',
+      clientName: 'QWERTy'
+    },
+];
+
+
+projects = [
+  {
+    gridClass: 'col-lg-6 col-md-6 col-sm-6 col-xs-12',
+    imgPath: '../../assets/images/project',
+    title: 'DATANEST',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  },
+  {
+    gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
+    imgPath: '../../assets/images/project',
+    title: 'DATANEST',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  },
+  {
+    gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
+    imgPath: '../../assets/images/project',
+    title: 'DATANEST',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  },
+  {
+    gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
+    imgPath: '../../assets/images/project',
+    title: 'DATANEST',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  },
+  {
+    gridClass: 'col-lg-3 col-md-3 col-sm-6 col-xs-12',
+    imgPath: '../../assets/images/project',
+    title: 'DATANEST',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  }
+];
+
+
+
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
