@@ -300,3 +300,24 @@ ul.list {
 		}
 	}
 }
+
+
+@media (max-width: 576px) {
+	.col{
+		display:block;
+		flex-basis: revert;
+	}
+	.wt-mg {
+		img{
+			width:100%;
+		}
+	}
+	img{
+		width:100%;
+	}
+	.picsum-img-wrapper{
+		img{
+			width: auto;
+		}
+	}
+}
