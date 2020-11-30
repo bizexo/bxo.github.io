@@ -229,3 +229,14 @@ ul.list {
   .services-info .col:nth-child(2) {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc; }
+
+@media (max-width: 576px) {
+  .col {
+    display: block;
+    flex-basis: revert; }
+  .wt-mg img {
+    width: 100%; }
+  img {
+    width: 100%; }
+  .picsum-img-wrapper img {
+    width: auto; } }
