@@ -241,7 +241,11 @@ ul.list {
   img {
     width: 100%; }
   .picsum-img-wrapper img {
-    width: auto; } }
+    width: auto; } 
+#myCarousel{
+  display:none;
+  }
+}
 
 /* Navigation */
 #slideNav {
