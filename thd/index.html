@@ -17,11 +17,14 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+  <script src="js/modernizr-2.7.1.min.js"></script>
 </head>
 
 <body class="loading">
+  <main>
   <section id="slide-1" class="homeSlide">
-    <div class="container">
+    <div data-anchor-target="#slide-1">
+    <div class="container" data-anchor-target="#slide-1">
       <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white">
         <a href="#" class="my-0 mr-md-auto font-weight-normal">
           <img src="assets/images/logo.png">
@@ -33,14 +36,12 @@
         </nav>
       </div>
     </div>
-  </section>
-
-  <section id="slide-2" class="homeSlide main-banner">
+    <div class="main-banner" data-anchor-target="#slide-1">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -86,38 +87,20 @@
             <img src="assets/images/banner-1.jpg">
           </div>
         </div>
-
-
-        <!-- <div class="navigator-banner">
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <i class="icon icon-ex-smaller">
-              <svg focusable="false">
-                <use xlink:href="#icon_rightArrow"></use>
-              </svg>
-            </i>
-          </a>
-          <div class="num"></div>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <i class="icon icon-ex-smaller">
-              <svg focusable="false">
-                <use xlink:href="#icon_rightArrow"></use>
-              </svg>
-            </i>
-          </a>
-        </div> -->
       </div>
     </div>
-
-
+    </div>
+  </div>
   </section>
 
-  <section id="slide-3" data-content-offset="50p" class="homeSlide homeSlideTall2">
-    <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Expertise & Services</h1>
+  <section id="slide-2" class="homeSlide ">
+    <div data-anchor-target="#slide-2">
+    <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" data-anchor-target="#slide-2">
+      <h1 class="display-4" data-anchor-target="#slide-2">Expertise & Services</h1>
     </div>
 
-    <div class="container service-view">
-      <div class="row">
+    <div class="container service-view" data-anchor-target="#slide-2">
+      <div class="row" data-anchor-target="#slide-2">
         <div class="col-md-3 col-lg-3 col-sm-12">
           <div class="card mb-4">
             <div class="card-body">
@@ -148,7 +131,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_cleaning"></use>
                 </svg>
               </i>
               <p>Cleaning</p>
@@ -157,7 +140,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_repairs"></use>
                 </svg>
               </i>
               <p>Repairs</p>
@@ -166,7 +149,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_consultant"></use>
                 </svg>
               </i>
               <p>Consultant</p>
@@ -178,7 +161,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_construction"></use>
                 </svg>
               </i>
               <p>Construction</p>
@@ -187,7 +170,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_emergency"></use>
                 </svg>
               </i>
               <p>Emergency</p>
@@ -196,7 +179,7 @@
             <div class="col-md-4 col-lg-4 col-sm-12 col">
               <i class="icon icon-big">
                 <svg focusable="false">
-                  <use xlink:href="#icon_health"></use>
+                  <use xlink:href="#icon_insurance"></use>
                 </svg>
               </i>
               <p>Insurance</p>
@@ -230,179 +213,35 @@
 
       </div>
     </div>
+    </div>
   </section>
 
-  <section id="slide-4" data-content-offset="90p" class="homeSlide homeSlideTall wt-mg-section">
-    <div class="container">
-      <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <section id="slide-3" class="homeSlide wt-mg-section">
+    <div class="container" data-anchor-target="#slide-3">
+      <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" data-anchor-target="#slide-3">
         <h1 class="display-4">Water Mitigation</h1>
         <p class="lead">
           Water Mitigation is the process of preventing or reducing the amount of water damage that happens after a wind
           storm to a roof, water damage to dwelling/contents from firemen caused by a firesomething like, a leaking pipe
           or e tc.a flooded basement. Water mitigation prevents any additional damage with fast and appropriate actions
-          once we have completed your water damage restoration. This process includes:
+          once we have completed your water damage restoration. This process includes:</br></br>
 
-          Assessment, Water Extraction, Cleaning, Sanitizing, Drying, Water Damage Repair, Water Damage Restoration
-
+          <b>Assessment, Water Extraction, Cleaning, Sanitizing, Drying, Water Damage Repair, Water Damage Restoration
+</b>
+        </br></br>
           Water mitigation is often required after plumbing failures, floods, or water rushes into homes after a storm.
           Ceiling water damage, soaked rugs, ruined furniture, and warped flooring begin to occur if a water damage
           restoration team isn't on site quickly. We take specific steps to reduce property destruction, avoid any
           potential mold growth, and restore the property to its original value.
         </p>
+        <a href="waterMitigation.html" class="text-center">Read More</a>
       </div>
-    </div>
-
-    <div class="container wt-mg">
-      <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col col-sm-12">
-              <p>
-                <img _ngcontent-sus-c7="" align="right" src="assets/images/info-1.jpg">
-                <span class="heading">The Damage To Better Than New</span>
-                If you're gracious enough to allow usrs the opportunity to help get your home or business back on track,
-                we'll make sure we do it quickly, efficiently, and with the same care and attention to detail, we would
-                work with our own homes and businesses.
-
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col col-sm-12">
-              <p>
-                <img _ngcontent-sus-c7="" align="right" src="assets/images/info-2.jpg">
-                <span class="heading">Our Water Damage Restoration Services</span>
-                After the water mitigation process is complete and further damage prevented, the water damage
-                restoration
-                process begins so we can start rebuilding and restoring your home. The water restoration process
-                includes:
-
-              </p>
-              <ul class="list">
-                <li> Water damage assessment</li>
-                <li> Water extraction</li>
-                <li> Assisting with filing insurance claims</li>
-                <li> Cleaning and restoration of possessions such as documents, linens,
-                  clothes and books.</li>
-                <li> Drying of affected areas such as furniture, walls, padding and carpet.</li>
-                <li> Locating and repairing the source of leaking water</li>
-                <li> Storm damage repair and reconstruction services</li>
-                <li> Remediating mold and mildew damage</li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <p>
-                <img _ngcontent-sus-c7="" align="right" src="assets/images/info-3.jpg">
-                <span class="heading">Water Damage Restoration Services</span>
-                Because we realize that it is very important to act quickly in response to emergencies like flooding
-                from
-                plumbing failures, or water backups because of storms, you can rely on us to provide the most efficient
-                water mitigation and restoration services that you can get 24 hours a day and 7 days a week.
-                </br></br>
-                If you have any questions regarding our water damage restoration services, don't be hesitant and call us
-                now or schedule an appointment.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <p>
-                <img _ngcontent-sus-c7="" align="right" src="assets/images/info-4.jpg">
-                <span class="heading">What to expect in case of a flood or any other water damage emergency:</span>
-                Within few minutes of your call, we dispatch our professionals to start repair & restoration services.
-                Once our professionals reach the scene, they make use of the latest equipment to start extracting water.
-                </br></br>
-                Once the water level subsides, we dehumidify your home and use special cleaning agents to prevent mold.
-                As
-                your structure is drying out, we will also be working on your furniture and other belongings at our
-                drying
-                & cleaning facility. Our staff is highly trained to handle even the most delicate items such as oriental
-                rugs. Our restoration specialists provide you the opportunity to relax and take care of other things
-                while
-                we take care of the water damage repair, restoration and clean up.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <h5>Things to do when you detect water damage:</h5>
-          <ul class="list">
-            <li>
-              Stay calm. You need to be able to think clearly.</li>
-            <li> Close down the water main. If your flood is related to appliances or pipes, shut down all sources of
-              water to reduce damage.</li>
-            <li> After that, shut down electrical breakers in the damaged areas. Make sure electricity is off before
-              removing or unplugging any of the electrical equipment from the
-              submerged areas or the wet carpet!</li>
-            <li> Call us for water damage restoration.</li>
-            <li> Remove fabrics, papers, books, potted plants, shoes and other items capable of staining the wet carpet.
-            </li>
-            <li> Mop and blot in order to remove as much water as you can.</li>
-            <li> Remove the rugs and anything that is not permanently attached to the floor. Don't try to remove the
-              wall-to-wall carpet.</li>
-            <li> The curtains should be lifted from the floor. Loop them through a coat hanger. Place this hanger on the
-              drapery rod.</li>
-            <li> Take a cloth and wipe the furniture. Place the wet cushions in a dry place in order to allow even
-              drying.
-              Place an aluminum foil under the legs of the furniture.</li>
-            <li> Move paintings, art, and photos to a dry and safe location.</li>
-            <li> Open the drawers, cabinet doors, and closets in order to circulate air and enhance the drying.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12">
-          <h5>Things to avoid when you detect water damage:</h5>
-          <ul class="list">
-            <li>
-              Avoid using the home vacuum. There is a risk of electrical shock, and there can be damage to the equipment
-              as well. </li>
-            <li> Avoid placing newspapers in the areas where you or other people will walk. The newspaper ink can
-              quickly
-              transfer to the wet fibers of the carpet and this can
-              result in permanent staining. </li>
-            <li> Don't</br>
-              - Walk on the carpet except when necessary. This will keep the damage from spreading to the unaffected
-              areas.</br>
-              - Enter any room that has standing water. If you must enter a room with standing water, turn off the
-              electricity to the house.</br>
-              - Lift the tacked-down carpet without professional help.</br>
-              - Use electrical appliances when you have wet floors or carpet.</br>
-              - Remove books from the shelves.
-            </li>
-          </ul>
-          <p>
-            Shop vacuums or the companies that only have carpet drying equipment can't prevent the water from damaging
-            the
-            walls, under molding or baseboards. The water penetrates through the floor coverings into the subfloors, and
-            it eventually causes damage to the rooms located below.
-            </br>
-            If the building's internal moisture isn't controlled, the undamaged objects that are safe from original
-            flood
-            damage can get ruined because it is absorbing moisture from the air. The structures that are not dried fast
-            or
-            adequately enough will serve as food sources for mold. This will later lead to more expensive mold removal
-            services.
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
 
-  <section id="slide-5" data-content-offset="66p" class="homeSlide homeSlideTall2">
-    <div class="container">
+  <section id="slide-4" class="homeSlide">
+    <div class="container" data-anchor-target="#slide-4">
       <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
         <h1 class="display-4 text-center">Covid-19 Service </h1>
         <div class="row">
@@ -431,8 +270,8 @@
   </section>
 
 
-  <section id="slide-6" data-content-offset="66p" class="homeSlide homeSlideTall2 gn-section">
-    <div class="container">
+  <section id="slide-5" class="homeSlide gn-section">
+    <div class="container" data-anchor-target="#slide-5">
       <div class="THD-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
         <h1 class="display-4 text-center">General Contractor</h1>
         <div class="row">
@@ -461,9 +300,9 @@
     </div>
   </section>
 
-  <section id="slide-7" data-content-offset="66p" class="homeSlide homeSlideTall2 ft-section">
-    <div class="container">
-      <footer class="pt-4 pb-4 pt-md-5">
+  <section id="slide-6" class="homeSlide ft-section">
+    <div class="container" data-anchor-target="#slide-6">
+      <footer class="pt-4 pb-4 pt-md-5" data-anchor-target="#slide-6">
         <div class="row">
           <div class="col-md-4 col-lg-4 col-sm-12">
             <img class="mb-2 text-center ft-logo" src="assets/images/logo.png" alt="">
@@ -514,30 +353,33 @@
       </footer>
     </div>
 
-    <div class="copyright">
+    <div class="copyright" data-anchor-target="#slide-6">
       <div class="container">
         <p class="text-center">Copyright © 2020 - All Rights Reserved - Tennessee Home Defense, Inc.</p>
       </div>
     </div>
   </section>
-
+</main>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src='js/waypoints.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
   </script>
-  <script src="js/svg.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/imagesloaded.js"></script>
-  <script src="js/waypoints.min.js"></script>
   <script src="js/skrollr.js"></script>
   <!--[if lt IE 9]>
 <script type="text/javascript" src="js/skrollr.ie.min.js"></script>
 <![endif]-->
-<script src="js/modernizr-2.7.1.min.js"></script> 
-<script src="js/_main.js"></script>
+  <script src="js/svg.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/imagesloaded.js"></script>
+  <script src="js/_main.js"></script>
+ 
+
 
 </body>
 
