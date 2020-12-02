@@ -121,6 +121,9 @@ ul.list {
     left: 0;
     height: 100%;
     width: 100%; }
+.main-banner .picsum-img-wrapper img{
+width:100%;
+}
   .main-banner .navigator-banner {
     position: absolute;
     right: 0;
