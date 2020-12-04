@@ -206,13 +206,13 @@ ul.list {
 
 	.container {
 		position: relative;
-		height: 500px;
+		height: 550px;
 		overflow: hidden;
 	}
 
 	.carousel-item {
 		.carousel-caption {
-			top: 75%;
+			top: 80%;
 			left: -100%;
 			z-index: 10;
 			color: #fff;
@@ -317,6 +317,10 @@ ul.list {
 	img{
 		width:100%;
 	}
+	#myCarousel{
+		display:none;
+		}
+	  
 	.picsum-img-wrapper{
 		img{
 			width: auto;
