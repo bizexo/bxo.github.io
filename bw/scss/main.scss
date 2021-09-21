@@ -1,5 +1,4 @@
 body {
-	font-family: 'Roboto', sans-serif;
 	color:#333333;
 	text-shadow: none !important;
 }
@@ -164,8 +163,9 @@ li{
 	}
 }
 
-.inner-section{
+.inner-section-o-g{ 
 	background: #f8f7f7;
+	padding-bottom:30px;
 }
 
 
@@ -229,6 +229,11 @@ ul.list {
 }
 
 .main-banner {
+	background: url(../images/banner-1.jpg) no-repeat top center fixed; 
+	background-size: cover;
+	.container{
+		position: relative; 
+	}
 .plane-baneer{
 	img{
 		width:100%; 
@@ -246,6 +251,7 @@ ul.list {
 			}
 		}
 	}
+	
 	.carousel-caption{
 		background:#fff;
 			padding:15px;  
@@ -300,6 +306,14 @@ ul.list {
 
 
 @media (max-width: 576px) {
+	.services-info{
+		.circle{
+			margin:0 auto;  
+		}
+	}
+	.our-achiememnts{
+		display:block; 
+	}
 	.col{
 		display:block;
 		flex-basis: revert;
@@ -309,9 +323,7 @@ ul.list {
 			width:100%;
 		}
 	}
-	img{
-		width:100%;
-	}
+
 	#myCarousel{
 		display:none;
 		}

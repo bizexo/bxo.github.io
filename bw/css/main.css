@@ -1,5 +1,4 @@
 body {
-  font-family: 'Roboto', sans-serif;
   color: #333333;
   text-shadow: none !important; }
 
@@ -127,8 +126,9 @@ li {
 .c-o img {
   width: 100%; }
 
-.inner-section {
-  background: #f8f7f7; }
+.inner-section-o-g {
+  background: #f8f7f7;
+  padding-bottom: 30px; }
 
 ul.list {
   margin-top: 35px;
@@ -173,38 +173,41 @@ ul.list {
     color: #333333;
     text-decoration: none; }
 
-.main-banner .plane-baneer img {
-  width: 100%; }
-
-.main-banner .carousel-indicators {
-  width: 100px;
-  left: 0px;
-  margin: 0px; }
-  .main-banner .carousel-indicators li {
-    border: none;
-    background: #9a9a9a; }
-    .main-banner .carousel-indicators li.active {
-      background: #da5004; }
-
-.main-banner .carousel-caption {
-  background: #fff;
-  padding: 15px;
-  width: 300px;
-  right: 70px;
-  left: auto;
-  transform: skew(-30deg); }
-  .main-banner .carousel-caption h3 {
-    color: #000;
-    text-align: left;
-    margin: 0px 0 0 30px;
-    transform: skew(30deg); }
-  .main-banner .carousel-caption span {
-    position: absolute;
-    width: 15px;
-    height: 100%;
+.main-banner {
+  background: url(../images/banner-1.jpg) no-repeat top center fixed;
+  background-size: cover; }
+  .main-banner .container {
+    position: relative; }
+  .main-banner .plane-baneer img {
+    width: 100%; }
+  .main-banner .carousel-indicators {
+    width: 100px;
+    left: 0px;
+    margin: 0px; }
+    .main-banner .carousel-indicators li {
+      border: none;
+      background: #9a9a9a; }
+      .main-banner .carousel-indicators li.active {
+        background: #da5004; }
+  .main-banner .carousel-caption {
     background: #fff;
-    top: 0;
-    left: -25px; }
+    padding: 15px;
+    width: 300px;
+    right: 70px;
+    left: auto;
+    transform: skew(-30deg); }
+    .main-banner .carousel-caption h3 {
+      color: #000;
+      text-align: left;
+      margin: 0px 0 0 30px;
+      transform: skew(30deg); }
+    .main-banner .carousel-caption span {
+      position: absolute;
+      width: 15px;
+      height: 100%;
+      background: #fff;
+      top: 0;
+      left: -25px; }
 
 .footer {
   border-top: 5px solid #000;
@@ -225,12 +228,14 @@ ul.list {
     padding: 15px 0; }
 
 @media (max-width: 576px) {
+  .services-info .circle {
+    margin: 0 auto; }
+  .our-achiememnts {
+    display: block; }
   .col {
     display: block;
     flex-basis: revert; }
   .wt-mg img {
-    width: 100%; }
-  img {
     width: 100%; }
   #myCarousel {
     display: none; }
