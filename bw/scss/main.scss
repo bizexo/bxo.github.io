@@ -1,6 +1,7 @@
 body {
 	color:#333333;
 	text-shadow: none !important;
+	font-family: 'Roboto', sans-serif;
 }
 
 svg {
@@ -38,6 +39,18 @@ svg:not(:root) {
 	height: 12px;
 }
 
+.v-align{
+	display: flex;
+	align-items: center;
+}
+.d-flex{
+	display:flex;  
+}
+
+.btn{
+	border-radius:0px;
+}
+
 .btn-primary{
 	background:#e7430a;
 	border:none !important;
@@ -65,8 +78,12 @@ li{
 	padding:10px 0;
 	.logo { 
 		img 
-		{width:50%;}  
+		{width:100%;} 	
 	}
+	h2{
+		text-transform: uppercase; 
+		margin: 0px; 
+	}  
 }
 .navbar-inverse{
 	background:#da5004;
@@ -80,6 +97,7 @@ li{
 			a{
 				color:#fff; 
 				text-shadow: none;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -87,35 +105,36 @@ li{
 
 .lable-strip{
 	background:#da5004;
-	h5{  
+	h2{  
 		color:#fff;
 		font-weight:bold;
 		text-align:center;
 		background:#333333;
 		padding: 18px 0px;
 		position: relative;
-		margin: 0 50px;
-	}
+		margin: 0 50px; 
+	
 	.triangle-left {
 		width: 0;
 		height: 0;
-		border-top: 25px solid transparent;
+		border-top: 34px solid transparent;
 		border-right: 25px solid #333333;
-		border-bottom: 25px solid transparent;
+		border-bottom: 34px solid transparent;
 		position: absolute;
-		left:-25px;
+		left:-25px; 
 		top:0px
 	}
 	.triangle-right {
 		width: 0;
 		height: 0;
-		border-top: 25px solid transparent;
+		border-top: 34px solid transparent;
 		border-left: 25px solid #333333;
-		border-bottom: 25px solid transparent;
+		border-bottom: 34px solid transparent;
 		position: absolute;
 		right:-25px;
 		top:0px
 	}
+}
 }
 
 .services-info{
@@ -154,7 +173,9 @@ li{
 
 
 .g-o{
-	margin-bottom:25px;
+	margin-top:50px;
+	padding:30px 0 60px;
+	background:#f8f7f7; 
 }
 
 .c-o{
@@ -280,6 +301,9 @@ ul.list {
 .footer{
 	border-top:5px solid #000; 
 	padding:25px 0 0; 
+	h3{ 
+		color:#000;
+	}
 	svg{
 		fill: #e7430a;
 	}
@@ -322,6 +346,10 @@ ul.list {
 		img{
 			width:100%;
 		}
+	}
+
+	.d-flex, .v-align{
+		display:block;  
 	}
 
 	#myCarousel{
