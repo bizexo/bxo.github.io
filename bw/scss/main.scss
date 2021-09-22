@@ -330,9 +330,21 @@ ul.list {
 
 
 @media (max-width: 576px) {
+	.navbar-inverse{
+		background: #333333;
+	}
 	.services-info{
 		.circle{
-			margin:0 auto;  
+			margin:0 auto;   
+		}
+	}
+	.lable-strip {
+		h2{
+			font-size:12px;
+			.triangle-left, .triangle-right { 
+				border-top: 24px solid transparent;
+   				 border-bottom: 24px solid transparent;
+			}
 		}
 	}
 	.our-achiememnts{
@@ -350,6 +362,14 @@ ul.list {
 
 	.d-flex, .v-align{
 		display:block;  
+	}
+
+	.footer{
+		.d-flex{
+			display: table;
+			margin: 0 auto;
+			text-align: center;  
+		}
 	}
 
 	#myCarousel{
