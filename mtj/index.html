@@ -486,7 +486,8 @@ $('.form-btn').on('click', function() {
   return false;
 });
 $('.closed').on('click', function() {
-  $('body').removeClass('form-slider');
+ // $('body').removeClass('form-slider');
+  document.getElementsByTagName("body")[0].removeAttribute("class");
   return false;
 });
 </script>
