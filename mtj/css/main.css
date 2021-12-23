@@ -12,6 +12,9 @@ svg {
 img {
   width: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; }
+
 .mt-0 {
   margin: 0px; }
 
@@ -66,7 +69,21 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  position: relative; }
+  background: #fff; }
+  .bw-header > .container {
+    position: relative; }
+  .bw-header.fixed {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5); }
+    .bw-header.fixed .logo {
+      background: none;
+      box-shadow: none;
+      height: 53px;
+      top: -2px;
+      padding: 0px; }
   .bw-header .logo {
     position: absolute;
     left: 0px;
@@ -76,12 +93,18 @@ li {
     padding: 9px;
     z-index: 1;
     background: #fff;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5); }
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s; }
     .bw-header .logo img {
       width: 100%; }
   .bw-header h2 {
     text-transform: uppercase;
     margin: 0px; }
+  .bw-header .btn {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: 9999; }
 
 .navbar-inverse {
   background: none;
@@ -93,23 +116,53 @@ li {
     float: none;
     display: table;
     margin: 0 auto; }
-    .navbar-inverse .navbar-nav li a {
-      color: #212121;
-      text-shadow: none;
-      text-transform: uppercase;
-      padding: 5px 10px;
-      margin: 0 3px;
+    .navbar-inverse .navbar-nav li {
+      background-color: #fff;
       border-radius: 3px;
-      font-weight: bold; }
-      .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:hover {
-        background-color: #d9ede4;
-        color: #212121; }
-    .navbar-inverse .navbar-nav li.active a {
-      background-color: #056839;
-      color: #fff; }
+      margin: 0 3px;
+      overflow: hidden; }
+      .navbar-inverse .navbar-nav li a {
+        color: #212121;
+        text-shadow: none;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        font-weight: bold; }
+        .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:hover {
+          background-color: #d9ede4;
+          color: #212121; }
+      .navbar-inverse .navbar-nav li.active a {
+        background-color: #056839;
+        color: #fff; }
+
+.heading-highlighter {
+  color: #056839; }
 
 .bread-crum {
   margin-top: 50px; }
+
+.donation-form {
+  position: fixed;
+  width: 40%;
+  height: calc(100vh);
+  padding: 15px;
+  background: #fff;
+  z-index: 99999;
+  right: -40%; }
+
+.d-form-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 0;
+  height: 0; }
+
+.form-slider {
+  overflow: hidden; }
+  .form-slider .donation-form {
+    right: 0px; }
+  .form-slider .d-form-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 99999; }
 
 .about-us {
   margin: 50px 0px; }
@@ -127,10 +180,10 @@ li {
     height: 480px; }
 
 .section-03 {
-  margin: 40px 0px 25px; }
+  margin: 40px 0px;
+  background-image: linear-gradient(to right, #17995b 50%, transparent 50%); }
   .section-03 .endo-info {
     padding: 15px;
-    background: #17995b;
     color: #fff; }
 
 #myCarousel-1 {
@@ -151,11 +204,6 @@ li {
     border-color: #17995b; }
     #myCarousel-1 .carousel-indicators li.active {
       background-color: #17995b; }
-
-#navbar .btn {
-  position: absolute;
-  right: 0;
-  top: 8px; }
 
 .lable-strip {
   background: #da5004; }
