@@ -1,8 +1,9 @@
 body {
 	color:#333333;
 	text-shadow: none !important;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background:#fff;
+	font-size:16px;
 }
 
 svg {
@@ -16,8 +17,19 @@ img{
 
 h1, h2, h3, h4, h5, h6{
 	font-family:'Poppins', sans-serif; 
+	margin:0px 0px 10px;
 }
  
+.form-inline {
+	margin-bottom:15px;
+	.form-group{
+		width:49.6%;
+		.form-control{
+			width: 100%;
+		}
+	}
+}
+
 .mt-0{
 margin:0px; 
 }
@@ -90,7 +102,6 @@ li{
 	}
 	&.fixed{
 		position: fixed;
-		background:rgba(255,255,255,0.9);
 		width: 100%;
 		z-index: 1;
 		box-shadow: 1px 0px 5px rgba(0,0,0,0.50);
@@ -147,7 +158,6 @@ li{
 				text-shadow: none;
 				text-transform: uppercase;
 				padding: 5px 10px; 
-				font-weight: bold; 
 				&:focus, &:hover{
 					background-color:#d9ede4;
 					color:#212121;  
@@ -181,7 +191,11 @@ li{
 	z-index: 99999;
 	right:-40%;
 	transition: all .2s;
-	
+	.form-inline {
+		.form-group {
+			width: 49.5%;
+		}	
+	}
 }
 .d-form-overlay{
 	background: rgba(0,0,0,0.70);
@@ -206,6 +220,48 @@ li{
 	margin:50px 0px; 
 	
 }
+.gallary-view{
+	margin-top:50px;
+	.row {
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		padding: 0 4px;
+	  }
+	  
+	  /* Create four equal columns that sits next to each other */
+	  .column {
+		-ms-flex: 25%; /* IE10 */
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	  }
+	  
+	  .column img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+	  }
+	  
+	  /* Responsive layout - makes a two column-layout instead of four columns */
+	  @media screen and (max-width: 800px) {
+		.column {
+		  -ms-flex: 50%;
+		  flex: 50%;
+		  max-width: 50%;
+		}
+	  }
+	  
+	  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	  @media screen and (max-width: 600px) {
+		.column {
+		  -ms-flex: 100%;
+		  flex: 100%;
+		  max-width: 100%;
+		}
+	  }
+}
 .section-02{
 	background:#f2f3f4; 
 	.card{
@@ -224,6 +280,7 @@ li{
 
 .section-03{
 	margin:40px 0px;
+
 	background-image:linear-gradient(to right, #17995b 50% , transparent 50%);
 	.endo-info{
 		padding:15px;
@@ -331,6 +388,78 @@ li{
 	}
 }
 
+.inner-banner{
+	position: relative;
+	height:380px;
+	display: flex;
+	align-self: center;
+	.container{
+		display: flex;
+			align-self: center;
+	}
+		.breadcrum{
+			display: flex;
+			align-self: center;
+			z-index: 1;
+			color: #ffffff;
+			font-size: 40px;
+			line-height: 30px;
+			a{
+				color: #ffffff;
+				font-size: 16px;
+				line-height: 30px;	
+			}
+		}
+	.inner-bg{
+		position: absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+	}
+}
+.inner-section-03{
+	background:#dfeaff;
+    padding: 40px 0 0 0;
+	#myCarousel-1 {
+		.carousel-indicators {
+			li{
+				border-color:#662d91;;
+				&.active{
+					background:#662d91;
+				}
+			}
+		}
+	}
+	h3{
+		color:#206ac0;
+	}
+	h4{
+		color:#662d91;
+	}
+	.quotes{
+		border:2px dashed #cbcdd3;
+		color: #000;
+		display: flex;
+		padding: 10px;
+		margin: 15px 0;
+		border-radius: 15px;
+		.icon{
+				margin-top:-22px;
+				margin-right:20px;
+				svg{
+					fill:#662d91;
+				}
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	.testimonial-img{
+		display: flex;
+    	justify-content: center;
+	}
+}
 
 .g-o{
 	margin-top:50px;
@@ -459,7 +588,7 @@ ul.list {
 	.btn{
 		border:1px solid #fff !important; 
 	} 
-	h4, p{   
+	h4, p, h5{   
 		color:#fff; 
 	}
 	svg{

@@ -1,8 +1,9 @@
 body {
   color: #333333;
   text-shadow: none !important;
-  font-family: 'Roboto', sans-serif;
-  background: #fff; }
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  font-size: 16px; }
 
 svg {
   vertical-align: middle;
@@ -13,7 +14,15 @@ img {
   width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 0px 10px; }
+
+.form-inline {
+  margin-bottom: 15px; }
+  .form-inline .form-group {
+    width: 49.6%; }
+    .form-inline .form-group .form-control {
+      width: 100%; }
 
 .mt-0 {
   margin: 0px; }
@@ -74,7 +83,6 @@ li {
     position: relative; }
   .bw-header.fixed {
     position: fixed;
-    background: rgba(255, 255, 255, 0.9);
     width: 100%;
     z-index: 1;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5); }
@@ -125,8 +133,7 @@ li {
         color: #212121;
         text-shadow: none;
         text-transform: uppercase;
-        padding: 5px 10px;
-        font-weight: bold; }
+        padding: 5px 10px; }
         .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:hover {
           background-color: #d9ede4;
           color: #212121; }
@@ -149,6 +156,8 @@ li {
   z-index: 99999;
   right: -40%;
   transition: all .2s; }
+  .donation-form .form-inline .form-group {
+    width: 49.5%; }
 
 .d-form-overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -167,6 +176,40 @@ li {
 
 .about-us {
   margin: 50px 0px; }
+
+.gallary-view {
+  margin-top: 50px;
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+  .gallary-view .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px; }
+  .gallary-view .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px; }
+  .gallary-view .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; }
+  @media screen and (max-width: 800px) {
+    .gallary-view .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 600px) {
+    .gallary-view .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%; } }
 
 .section-02 {
   background: #f2f3f4; }
@@ -260,6 +303,61 @@ li {
       border-left: 5px solid #e7430a;
       padding: 25px; }
 
+.inner-banner {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-self: center; }
+  .inner-banner .container {
+    display: flex;
+    align-self: center; }
+  .inner-banner .breadcrum {
+    display: flex;
+    align-self: center;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 30px; }
+    .inner-banner .breadcrum a {
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 30px; }
+  .inner-banner .inner-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+
+.inner-section-03 {
+  background: #dfeaff;
+  padding: 40px 0 0 0; }
+  .inner-section-03 #myCarousel-1 .carousel-indicators li {
+    border-color: #662d91; }
+    .inner-section-03 #myCarousel-1 .carousel-indicators li.active {
+      background: #662d91; }
+  .inner-section-03 h3 {
+    color: #206ac0; }
+  .inner-section-03 h4 {
+    color: #662d91; }
+  .inner-section-03 .quotes {
+    border: 2px dashed #cbcdd3;
+    color: #000;
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 15px; }
+    .inner-section-03 .quotes .icon {
+      margin-top: -22px;
+      margin-right: 20px; }
+      .inner-section-03 .quotes .icon svg {
+        fill: #662d91; }
+    .inner-section-03 .quotes p {
+      font-size: 16px; }
+  .inner-section-03 .testimonial-img {
+    display: flex;
+    justify-content: center; }
+
 .g-o {
   margin-top: 50px;
   padding: 30px 0 60px;
@@ -351,7 +449,7 @@ ul.list {
   padding: 25px 0 0; }
   .footer .btn {
     border: 1px solid #fff !important; }
-  .footer h4, .footer p {
+  .footer h4, .footer p, .footer h5 {
     color: #fff; }
   .footer svg {
     fill: #fff; }
