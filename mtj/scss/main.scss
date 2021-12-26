@@ -4,6 +4,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	background:#fff;
 	font-size:16px;
+	color: #5B5B5B;
 }
 
 svg {
@@ -294,6 +295,53 @@ li{
 		img{
 			width:250px;
 			margin-right: 20px;
+		}
+	}
+}
+
+.news-events-view{
+	.nav-tabs{
+		margin-bottom:30px;
+		li{
+			background-color: none !important;
+			a{
+				border:none;
+				border-bottom:2px solid transparent;
+				padding: 10px 50px 8px;
+			}
+			&.active{
+				a, a:hover,  a:focus{
+					border: none;
+					border-bottom:2px solid #772ab3;
+					color:#772ab3;
+				}
+			}
+		}
+	}
+	.tab-content{
+		.card{
+			border:1px solid #eeeeee;
+			box-shadow: 0px 3px 3px rgba(200,200,200,0.4);
+			.card-body{
+				padding:15px;
+				.date{
+					font-size:13px;
+					color: #5B5B5B;
+				}
+				h5{
+					font-size:24px;
+					margin: 20px 0;
+					color:#333333;
+				}
+			}
+		}
+	}
+	.event-grid{
+		h5{
+			padding:15px;
+			margin: 0;
+			color:#333333;
+			font-size:20px;
 		}
 	}
 }
@@ -611,14 +659,21 @@ ul.list {
 		margin-top:20px;
 	}
 	.footer-logo{ 
-		
+		margin-bottom: 35px;
 		img{
 			background: #fff;
     		padding: 10px;
 			width:40%;  
 		}
 	}
+	.phone{
+		margin-top:20px;
+	}
+	.notification{
+		margin:30px 0;
+	}
 	.footer-li{
+		margin-bottom:35px;
 		li{
 			padding:10px 0;
 			list-style: disc inside;
@@ -626,6 +681,13 @@ ul.list {
 			a{
 				color:#fff;
 			}
+		}
+		
+	}
+	.col{
+		border-right:1px solid rgba(255,255,255, .2);
+		&:last-child{
+			border:none;
 		}
 	}
 } 

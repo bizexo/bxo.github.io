@@ -3,7 +3,8 @@ body {
   text-shadow: none !important;
   font-family: 'Poppins', sans-serif;
   background: #fff;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #5B5B5B; }
 
 svg {
   vertical-align: middle;
@@ -236,6 +237,38 @@ li {
     width: 250px;
     margin-right: 20px; }
 
+.news-events-view .nav-tabs {
+  margin-bottom: 30px; }
+  .news-events-view .nav-tabs li {
+    background-color: none !important; }
+    .news-events-view .nav-tabs li a {
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 10px 50px 8px; }
+    .news-events-view .nav-tabs li.active a, .news-events-view .nav-tabs li.active a:hover, .news-events-view .nav-tabs li.active a:focus {
+      border: none;
+      border-bottom: 2px solid #772ab3;
+      color: #772ab3; }
+
+.news-events-view .tab-content .card {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 3px 3px rgba(200, 200, 200, 0.4); }
+  .news-events-view .tab-content .card .card-body {
+    padding: 15px; }
+    .news-events-view .tab-content .card .card-body .date {
+      font-size: 13px;
+      color: #5B5B5B; }
+    .news-events-view .tab-content .card .card-body h5 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #333333; }
+
+.news-events-view .event-grid h5 {
+  padding: 15px;
+  margin: 0;
+  color: #333333;
+  font-size: 20px; }
+
 #myCarousel-1 {
   height: 350px; }
   #myCarousel-1 .quotes {
@@ -463,16 +496,28 @@ ul.list {
     margin-top: 20px; }
   .footer .address {
     margin-top: 20px; }
-  .footer .footer-logo img {
-    background: #fff;
-    padding: 10px;
-    width: 40%; }
-  .footer .footer-li li {
-    padding: 10px 0;
-    list-style: disc inside;
-    color: #fff; }
-    .footer .footer-li li a {
+  .footer .footer-logo {
+    margin-bottom: 35px; }
+    .footer .footer-logo img {
+      background: #fff;
+      padding: 10px;
+      width: 40%; }
+  .footer .phone {
+    margin-top: 20px; }
+  .footer .notification {
+    margin: 30px 0; }
+  .footer .footer-li {
+    margin-bottom: 35px; }
+    .footer .footer-li li {
+      padding: 10px 0;
+      list-style: disc inside;
       color: #fff; }
+      .footer .footer-li li a {
+        color: #fff; }
+  .footer .col {
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
+    .footer .col:last-child {
+      border: none; }
 
 @media (max-width: 576px) {
   .navbar-inverse {
