@@ -230,6 +230,12 @@ li {
     padding: 15px;
     color: #fff; }
 
+.events-view .card {
+  display: flex; }
+  .events-view .card img {
+    width: 250px;
+    margin-right: 20px; }
+
 #myCarousel-1 {
   height: 350px; }
   #myCarousel-1 .quotes {
