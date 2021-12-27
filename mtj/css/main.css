@@ -166,6 +166,12 @@ li {
   width: 0;
   height: 0; }
 
+.form-btn i {
+  display: none; }
+
+.form-btn svg {
+  fill: #fff; }
+
 .form-slider {
   overflow: hidden; }
   .form-slider .donation-form {
@@ -520,28 +526,64 @@ ul.list {
       border: none; }
 
 @media (max-width: 576px) {
-  .navbar-inverse {
-    background: #333333; }
-  .services-info .circle {
-    margin: 0 auto; }
-  .lable-strip h2 {
-    font-size: 12px; }
-    .lable-strip h2 .triangle-left, .lable-strip h2 .triangle-right {
-      border-top: 24px solid transparent;
-      border-bottom: 24px solid transparent; }
-  .our-achiememnts {
-    display: block; }
-  .col {
+  .bw-header {
     display: block;
-    flex-basis: revert; }
-  .wt-mg img {
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5); }
+    .bw-header .btn {
+      top: 100px;
+      z-index: 0;
+      right: 15px;
+      top: 0px; }
+    .bw-header.fixed {
+      position: relative; }
+    .bw-header .logo {
+      left: 15px;
+      top: 0px;
+      height: 37px;
+      background: none;
+      box-shadow: none;
+      width: 18%;
+      padding: 0px; }
+  .bread-crum {
+    margin: 0; }
+  .form-btn i {
+    display: block; }
+  .form-btn span {
+    display: none; }
+  .navbar {
+    min-height: auto;
+    right: 60px; }
+    .navbar .navbar-toggle {
+      margin: 0px; }
+    .navbar .navbar-nav li {
+      margin: 10px 0px; }
+  .navbar-inverse {
+    background: #333333;
+    display: table;
+    float: right; }
+  .donation-form {
+    width: 100%;
+    overflow-y: auto;
+    right: -100%; }
+  .section-03 {
+    background: none; }
+    .section-03 .section-endo-info {
+      background: #17995b; }
+  .form-inline .form-group, .donation-form .form-inline .form-group {
     width: 100%; }
   .d-flex, .v-align {
     display: block; }
+  .events-view .card {
+    display: block; }
+    .events-view .card img {
+      width: 100%; }
   .footer .d-flex {
     display: table;
     margin: 0 auto;
     text-align: center; }
+  .footer .col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   #myCarousel {
     display: none; }
   .picsum-img-wrapper img {
