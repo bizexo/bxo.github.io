@@ -25,7 +25,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="svg/svg.js"></script>
-
+  <script src="js/slick.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -35,6 +35,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -175,159 +177,114 @@
         <h4>About Melanie Taylor Jefferson</h4> 
       </div>
       <div class="row">
-       
         <div class="col-md-12">
-          <div id="myCarousel-1" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel-1" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel-1" data-slide-to="1"></li>
-              <li data-target="#myCarousel-1" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="testimonial">
-                  <div class="row">
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                     
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate, </p>
-                      </div>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                      
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate, </div></p>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div id="myCarousel-1" class="slider responsive">
+               <div class="testimonial">
+              <div class="quotes">
+                <i class="icon icon-medium">
+                  <svg focusable="false">
+                    <use xlink:href="#icon_quote"></use>
+                  </svg>
+                </i>
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                nulla luctus pharetra vulputate, </p>
               </div>
-              <div class="item">
-                <div class="testimonial">
-                  <div class="row">
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                      
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate, </p></div>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                      
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate, </p></div>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="testimonial-img">
+                <p>
+                  <img src="images/info-2.jpg" alt="">
+                  <span><b>Mack Misrty</b><br>
+                    Treasurer</span>
+                </p>
               </div>
-              <div class="item">
-                <div class="testimonial">
-                  <div class="row">
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                     
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate, </p> </div>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-                      <div class="quotes">
-                        <i class="icon icon-medium">
-                          <svg focusable="false">
-                            <use xlink:href="#icon_quote"></use>
-                          </svg>
-                        </i>
-                     
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
-                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
-                        nulla luctus pharetra vulputate,  </div></p>
-                      <div class="testimonial-img">
-                        <p>
-                          <img src="images/info-2.jpg" alt="">
-                          <span><b>Mack Misrty</b><br>
-                            Treasurer</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+            <div class="testimonial">
+              <div class="quotes">
+                <i class="icon icon-medium">
+                  <svg focusable="false">
+                    <use xlink:href="#icon_quote"></use>
+                  </svg>
+                </i>
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                nulla luctus pharetra vulputate, </p>
+              </div>
+              <div class="testimonial-img">
+                <p>
+                  <img src="images/info-2.jpg" alt="">
+                  <span><b>Mack Misrty</b><br>
+                    Treasurer</span>
+                </p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="quotes">
+                <i class="icon icon-medium">
+                  <svg focusable="false">
+                    <use xlink:href="#icon_quote"></use>
+                  </svg>
+                </i>
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                nulla luctus pharetra vulputate, </p>
+              </div>
+              <div class="testimonial-img">
+                <p>
+                  <img src="images/info-2.jpg" alt="">
+                  <span><b>Mack Misrty</b><br>
+                    Treasurer</span>
+                </p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="quotes">
+                <i class="icon icon-medium">
+                  <svg focusable="false">
+                    <use xlink:href="#icon_quote"></use>
+                  </svg>
+                </i>
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                nulla luctus pharetra vulputate, </p>
+              </div>
+              <div class="testimonial-img">
+                <p>
+                  <img src="images/info-2.jpg" alt="">
+                  <span><b>Mack Misrty</b><br>
+                    Treasurer</span>
+                </p>
+              </div>
+            </div>
+               <div class="testimonial">
+              <div class="quotes">
+                <i class="icon icon-medium">
+                  <svg focusable="false">
+                    <use xlink:href="#icon_quote"></use>
+                  </svg>
+                </i>
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                nulla luctus pharetra vulputate, </p>
+              </div>
+              <div class="testimonial-img">
+                <p>
+                  <img src="images/info-2.jpg" alt="">
+                  <span><b>Mack Misrty</b><br>
+                    Treasurer</span>
+                </p>
+              </div>
+            </div>
+             
           </div>
         </div>
       </div>
@@ -426,6 +383,47 @@
 </body>
 
 <script>
+  $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+  {
+      breakpoint: 1170,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
   $(window).scroll(function(){
   var sticky = $('.bw-header'),
       scroll = $(window).scrollTop();

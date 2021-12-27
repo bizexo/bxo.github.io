@@ -357,6 +357,29 @@ li{
 
 #myCarousel-1{
 	height:350px;
+	&.slider{
+		height:auto;
+		.slick-dots {
+			li {
+				width: 10px;
+				height: 10px;
+				button{
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					border:1px solid #662d91;
+					&::before{
+						display:none;
+					} 
+				}
+				&.slick-active{
+					button{
+						background:#662d91;
+					}
+				}
+			}
+		}
+	}
 	.quotes{
 		font-size:50px;
 		color:#000; 
@@ -509,7 +532,7 @@ li{
 		color: #000;
 		display: flex;
 		padding: 10px;
-		margin: 15px 0;
+		margin: 15px;
 		border-radius: 15px;
 		.icon{
 				margin-top:-22px;

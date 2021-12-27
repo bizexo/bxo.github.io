@@ -277,6 +277,20 @@ li {
 
 #myCarousel-1 {
   height: 350px; }
+  #myCarousel-1.slider {
+    height: auto; }
+    #myCarousel-1.slider .slick-dots li {
+      width: 10px;
+      height: 10px; }
+      #myCarousel-1.slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #662d91; }
+        #myCarousel-1.slider .slick-dots li button::before {
+          display: none; }
+      #myCarousel-1.slider .slick-dots li.slick-active button {
+        background: #662d91; }
   #myCarousel-1 .quotes {
     font-size: 50px;
     color: #000; }
@@ -390,7 +404,7 @@ li {
     color: #000;
     display: flex;
     padding: 10px;
-    margin: 15px 0;
+    margin: 15px;
     border-radius: 15px; }
     .inner-section-03 .quotes .icon {
       margin-top: -22px;
