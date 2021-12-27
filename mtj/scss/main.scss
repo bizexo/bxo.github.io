@@ -205,6 +205,15 @@ li{
 	height:0;
 }
 
+.form-btn{
+	i{
+		display: none;
+	}
+	svg{
+		fill:#fff;
+	}
+}
+
 .form-slider{
 	overflow: hidden;
 	.donation-form{
@@ -693,38 +702,82 @@ ul.list {
 } 
 
 @media (max-width: 576px) {
-	.navbar-inverse{
-		background: #333333;
-	}
-	.services-info{
-		.circle{
-			margin:0 auto;   
+	.bw-header{
+		display:block;
+		box-shadow: 1px 0px 5px rgba(0,0,0,0.50);
+		.btn{
+			top:100px;
+			z-index:0;
+			right: 15px;
+			top: 0px;
+		}
+		&.fixed{
+			position: relative;
+		}
+		.logo{
+			left: 15px;
+			top: 0px;
+			height: 37px;
+			background:none;
+			box-shadow:none;
+			width: 18%;
+			padding:0px;
 		}
 	}
-	.lable-strip {
-		h2{
-			font-size:12px;
-			.triangle-left, .triangle-right { 
-				border-top: 24px solid transparent;
-   				 border-bottom: 24px solid transparent;
+	.bread-crum{
+		margin:0;
+	}
+	.form-btn{
+		i{
+			display: block;
+		}
+		span{
+			display:none;
+		}
+	}
+	.navbar{
+		min-height: auto;
+		right: 60px;
+		.navbar-toggle{
+			margin:0px;
+		}
+		.navbar-nav{
+			li{
+				margin:10px 0px;
 			}
 		}
 	}
-	.our-achiememnts{
-		display:block; 
+	.navbar-inverse{
+		background: #333333;
+		display: table;
+		float: right;
 	}
-	.col{
-		display:block;
-		flex-basis: revert;
+	.donation-form{
+		width:100%;
+		overflow-y: auto;
+		right:-100%;
 	}
-	.wt-mg {
-		img{
-			width:100%;
+	
+	.section-03 {
+		background:none;
+		.section-endo-info{
+			background:#17995b;
 		}
+	}
+
+	.form-inline .form-group, .donation-form .form-inline .form-group{
+		width: 100%;
 	}
 
 	.d-flex, .v-align{
 		display:block;  
+	}
+
+	.events-view .card{
+		display:block;
+		img{
+			width:100%;
+		}
 	}
 
 	.footer{
@@ -732,6 +785,10 @@ ul.list {
 			display: table;
 			margin: 0 auto;
 			text-align: center;  
+		}
+		.col{
+			border-right:none;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 		}
 	}
 
