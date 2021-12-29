@@ -267,6 +267,9 @@ section{
 			}
 		}
 	}
+	.btn {
+		margin-bottom:15px;
+	}
 }
 .gallary-view{
 	margin-top:50px;
@@ -312,9 +315,9 @@ section{
 }
 .section-02{
 	background:#f2f3f4; 
-	height:550px;
+	height:580px;
 	img{
-		height:550px;
+		height:580px;
 		width:40%;
 		object-fit: cover;
 		position:absolute;
@@ -325,7 +328,6 @@ section{
 		text-align: center;
 		padding:15px;
 		border-radius:5px;
-		margin-top:25px;
 		cursor:pointer;
 		p{
 			font-weight: bold;
@@ -415,7 +417,7 @@ section{
 }
 
 #myCarousel-1{
-	height:400px;
+	height:500px;
 	margin-left: 40px;
 	&.slider{
 		height:auto;
@@ -856,7 +858,7 @@ ul.list {
 			height: 37px;
 			background:none;
 			box-shadow:none;
-			width: 18%;
+			width: 24%;
 			padding:0px;
 		}
 	}
