@@ -18,7 +18,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,53 +40,53 @@
 ================================================== -->
 
 <body>
-<div class="d-form-overlay closed"></div>
-<div class="donation-form">
-  <h1>Donation Form</h1>
-  <form>
-    <div class="form-group">
-     <input placeholder="Donor Name" type="text" class="form-control" id="DonorName">
-    </div>
-    <div class="form-inline">
+  <div class="d-form-overlay closed"></div>
+  <div class="donation-form">
+    <h1>Donation Form</h1>
+    <form>
       <div class="form-group">
-        <select  class="form-control" id="sel1">
-          <option>Type of Donation</option>
-          <option>Cash</option>
-          <option>Product/Item</option>
-          <option>Service</option>
-          <option>Other</option>
-        </select>
+        <input placeholder="Donor Name" type="text" class="form-control" id="DonorName">
+      </div>
+      <div class="form-inline">
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>Type of Donation</option>
+            <option>Cash</option>
+            <option>Product/Item</option>
+            <option>Service</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input placeholder="Amount" type="text  " class="form-control" id="Amount">
+        </div>
       </div>
       <div class="form-group">
-        <input placeholder="Amount" type="text  " class="form-control" id="Amount">
+        <input placeholder="Email address" type="text" class="form-control" id="email">
       </div>
-    </div>  
-    <div class="form-group">
-      <input placeholder="Email address" type="text" class="form-control" id="email">
-    </div>
-    <div class="form-group">
-      <input  placeholder='Phone Number' type="text" class="form-control" id="PhoneNumber">
-    </div>
-  
-    <div class="form-group">
-      <input placeholder='Your Address line 1' type="text" class="form-control" id="add1">
-    </div>
-    <div class="form-group">
-      <input placeholder='Your Address line 2' type="text" class="form-control" id="add2">
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" rows="5" id="comment">Donor Note</textarea>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <button type="submit" class="btn btn-default closed btn-block">Cancel</button>
+      <div class="form-group">
+        <input placeholder='Phone Number' type="text" class="form-control" id="PhoneNumber">
       </div>
-      <div class="col-md-6">
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+      <div class="form-group">
+        <input placeholder='Your Address line 1' type="text" class="form-control" id="add1">
       </div>
-    </div>
-  </form>
-</div>
+      <div class="form-group">
+        <input placeholder='Your Address line 2' type="text" class="form-control" id="add2">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" id="comment">Donor Note</textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-default closed btn-block">Cancel</button>
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
   <section>
     <div class="bw-header">
       <div class="container">
@@ -111,16 +112,16 @@
                 <li>
                   <a href="aboutus.html">About Us</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="newsevents.html">NEWS & EVENTS</a>
                 </li>
                 <li>
                   <a href="gallary.html">GALLARY</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="contact.html">Connect us</a>
                 </li>
-            </ul>
+              </ul>
             </div>
 
           </div>
@@ -137,71 +138,46 @@
     </div>
 
     <div class="inner-banner">
-        <img class="inner-bg"  src="images/contact-hd.jpg" alt="">
-       <div class="container">
+      <img class="inner-bg" src="images/about-hd.jpg" alt="">
+      <div class="container">
         <div class="breadcrum">
-          <div class="title">Contact Us<br>
-            <a href="">Home  /  </a>
-            <a href="">Contact Us</a>
-          </div>
-        </div>
-       </div>
-    </div>
-  </section>
-  <section class="about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 col-lg-7 col-sm-12 mt-0">
-          <h2>Get in Touch</h2>
-          <p>Our team is happy to answer your questions. <br>
-            Fill out the form and we will be in touch as soon as possible.</p>
-          <form>
-            <div class="form-inline">
-              <div class="form-group">
-               <input placeholder="Full Name" type="text" class="form-control" id="name">
-              </div>
-              <div class="form-group">
-               <input placeholder="Email Address" type="email  " class="form-control" id="email">
-              </div>
-            </div>  
-            <div class="form-group">
-             <input placeholder="Subject" type="text" class="form-control" id="subject">
-            </div>
-            <div class="form-group">
-             <textarea class="form-control" rows="5" id="comment">Write Message
-             </textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-          </form>
-        </div>
-        <div class="col-md-5 col-lg-5 col-sm-12 mt-0">
-          <div class="address">
-           <h4>Tondra Davis, Treasurer</h4>
-          
-            <p>
-              <b>Campaign Address</b>
-              200 Jefferson Avenue, Suite 1500 <br>
-              Memphis, TN   38103
-            </p>
-              
-            <p>
-                <b>Phone Number</b>
-                (901) 428-4360
-            </p>
-           
-            <p>
-              <b>Email Address</b>
-              <a href=""> tondra.davis4MET4Chancellor@gmail.com</a>
-            </p>
+          <div class="title">News and Events<br>
+            <a href="">Home / </a>
+            <a href="">News and Events</a>
           </div>
         </div>
       </div>
     </div>
   </section>
- 
-  <section>
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=200%20Jefferson%20Avenue,%20Suite%201500%20Memphis,%20TN%2038103&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><a href="https://www.embedgooglemap.net">use google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+  <section class="letter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Letter of Reference for Melanie Taylor</h2>
+          <p>It is with great pleasure I write this letter of reference on behalf of attorney Melanie Taylor whom I have
+            known for several years. As a colleague, I have witnessed Melanie exhibit a high standard of excellence in
+            our legal profession. She is intelligent, hardworking, and resourceful often showcasing her keen analytical
+            skills and her wonderful grasp of the law when representing her clients in the courtroom. Melanie is
+            detail-oriented, thorough, and untiring in her career never taking the path of least resistance but often
+            challenging herself for continue growth. <br> <br>
+            Not only is her professionalism beyond reproach, but so is her personality and character. She is a person of
+            high moral standards, well respected by judges and attorneys, and held in high esteem by all who know her.
+            Whenever colleagues have legal issues or questions, she does not hesitate to help often providing her wealth
+            of knowledge, expertise, and resources. There has never been a time when I asked a question and she denied
+            me. Although her schedule is full as a sole practitioner, a divorce referee, a mental health attorney, and a
+            wife, she makes time to help a colleague in need. Finally, Melanie is a beacon of light for her community.
+            She is an active member of Brown Baptist Church and is sponsor of the Young Actors Guild a nonprofit
+            organization which exposes inner city youths to dance and theatrical productions. <br> <br>
+            For the foregoing reasons, I am honored to provide this letter of reference for Attorney Melanie Taylor.
+          </p>
+          <p class="text-right">Sincerely, <br> <br>
+            DeVenus Foster, Esq.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
+
 
   <section class="footer">
     <div class="container">
@@ -216,7 +192,7 @@
               <h5>Campaign Address</h5>
               <p>
                 200 Jefferson Avenue, Suite 1500 <br>
-                Memphis, TN   38103
+                Memphis, TN 38103
               </p>
               <p class="phone">Phone Number : (901) 428-4360<br>
                 Email Address: tondra.davis4MET4Chancellor@gmail.com
@@ -236,10 +212,10 @@
               <li>
                 <a href="newsevents.html">NEWS & EVENTS</a>
               </li>
-              <li >
+              <li>
                 <a href="gallary.html">GALLARY</a>
               </li>
-              <li >
+              <li>
                 <a href="contact.html">Connect us</a>
               </li>
             </ul>
@@ -295,23 +271,23 @@
 </body>
 
 <script>
-  $(window).scroll(function(){
-  var sticky = $('.bw-header'),
+  $(window).scroll(function () {
+    var sticky = $('.bw-header'),
       scroll = $(window).scrollTop();
 
-  if (scroll >= 100) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
+    if (scroll >= 100) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
 
-$('.form-btn').on('click', function() {
-  $('body').addClass('form-slider');
-  return false;
-});
-$('.closed').on('click', function() {
- // $('body').removeClass('form-slider');
-  document.getElementsByTagName("body")[0].removeAttribute("class");
-  return false;
-});
+  $('.form-btn').on('click', function () {
+    $('body').addClass('form-slider');
+    return false;
+  });
+  $('.closed').on('click', function () {
+    // $('body').removeClass('form-slider');
+    document.getElementsByTagName("body")[0].removeAttribute("class");
+    return false;
+  });
 </script>
 
 </html>
