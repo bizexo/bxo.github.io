@@ -212,6 +212,8 @@ section h1, section p {
   .about-us .address p b {
     display: block;
     font-weight: 500; }
+  .about-us .btn {
+    margin-bottom: 15px; }
 
 .gallary-view {
   margin-top: 50px;
@@ -249,9 +251,9 @@ section h1, section p {
 
 .section-02 {
   background: #f2f3f4;
-  height: 550px; }
+  height: 580px; }
   .section-02 img {
-    height: 550px;
+    height: 580px;
     width: 40%;
     object-fit: cover;
     position: absolute; }
@@ -261,7 +263,6 @@ section h1, section p {
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    margin-top: 25px;
     cursor: pointer; }
     .section-02 .card p {
       font-weight: bold;
@@ -323,7 +324,7 @@ section h1, section p {
   font-size: 20px; }
 
 #myCarousel-1 {
-  height: 400px;
+  height: 500px;
   margin-left: 40px; }
   #myCarousel-1.slider {
     height: auto; }
@@ -646,7 +647,7 @@ ul.list {
       height: 37px;
       background: none;
       box-shadow: none;
-      width: 18%;
+      width: 24%;
       padding: 0px; }
   .bread-crum {
     margin: 0; }
