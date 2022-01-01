@@ -3,8 +3,7 @@ body {
   text-shadow: none !important;
   font-family: 'Poppins', sans-serif;
   background: #fff;
-  font-size: 16px;
-  color: #5B5B5B; }
+  font-size: 16px; }
   body p, body a {
     font-weight: 400; }
 
@@ -19,6 +18,9 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   margin: 0px 0px 10px; }
+
+h2 {
+  color: #333; }
 
 .form-control {
   height: 45px; }
@@ -70,14 +72,15 @@ svg:not(:root) {
   font-weight: 500; }
 
 .btn {
-  border-radius: 3px;
+  border-radius: 5px;
   text-transform: uppercase;
   padding: 12px;
-  font-weight: 500; }
+  font-weight: 500;
+  border: 1px solid #fff; }
 
 .btn-primary {
   background: #772ab3;
-  border: 2px solid #772ab3; }
+  border: 1px solid #772ab3; }
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background: #570596 !important;
     border: 2px solid #570596 !important; }
@@ -263,7 +266,7 @@ section h1, section p {
     background: #fff;
     box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer; }
     .section-02 .card p {
@@ -280,7 +283,7 @@ section h1, section p {
 
 .section-03 {
   margin: 40px 0px;
-  background-image: linear-gradient(to right, #17995b 50%, transparent 50%); }
+  background-image: linear-gradient(to right, #17995b 40%, transparent 0%); }
   .section-03 .endo-info {
     padding: 15px;
     color: #fff; }
@@ -326,8 +329,7 @@ section h1, section p {
   font-size: 20px; }
 
 #myCarousel-1 {
-  height: 500px;
-  margin-left: 40px; }
+  height: 500px; }
   #myCarousel-1.slider {
     height: auto; }
     #myCarousel-1.slider .slick-dots li {
@@ -358,7 +360,10 @@ section h1, section p {
     overflow: hidden;
     margin-right: 15px; }
   #myCarousel-1 .carousel-indicators li {
-    border-color: #17995b; }
+    border-color: #17995b;
+    margin: 0 3px;
+    width: 12px;
+    height: 12px; }
     #myCarousel-1 .carousel-indicators li.active {
       background-color: #17995b; }
 
@@ -542,17 +547,20 @@ ul.list {
     margin: 0 auto; }
   .ft-section svg {
     fill: #e7430a; }
-  .ft-section .copyright {
-    background: #e7430a;
-    color: #fff;
-    font-size: 14px;
-    padding: 15px 0; }
-    .ft-section .copyright p {
-      padding: 0px;
-      margin: 0px; }
   .ft-section a {
     color: #333333;
     text-decoration: none; }
+
+.copyright {
+  background: #1c0f25;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 0; }
+  .copyright p {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 12px; }
 
 .main-banner {
   background: url(../images/banner-1.png) no-repeat top center #662e91;
@@ -575,7 +583,7 @@ ul.list {
         background: #da5004; }
   .main-banner .carousel-caption {
     padding: 15px;
-    width: 40%;
+    width: 60%;
     left: -15px;
     text-align: left;
     top: 50%;
@@ -592,7 +600,9 @@ ul.list {
       font-weight: 800;
       margin: 20px 0px; }
     .main-banner .carousel-caption .btn {
-      margin-top: 15px; }
+      margin-top: 15px;
+      border-color: #fff;
+      text-transform: capitalize; }
 
 .footer {
   background: #3f2255;
@@ -604,7 +614,8 @@ ul.list {
     color: #fff; }
   .footer h4 {
     font-size: 20px;
-    font-weight: 700; }
+    font-weight: 600;
+    text-transform: uppercase; }
   .footer svg {
     fill: #fff; }
   .footer .social-media {
@@ -619,11 +630,11 @@ ul.list {
       .footer .address p b {
         font-weight: 600; }
   .footer .footer-logo {
-    margin: 35px 0px; }
+    margin: 20px 0px; }
     .footer .footer-logo img {
       background: #fff;
       padding: 10px;
-      width: 40%; }
+      width: 30%; }
   .footer .phone {
     margin-top: 20px; }
   .footer .notification {
@@ -631,7 +642,7 @@ ul.list {
   .footer .footer-li {
     margin-bottom: 35px; }
     .footer .footer-li li {
-      padding: 10px 0;
+      padding: 5px 0;
       list-style: disc inside;
       color: #fff; }
       .footer .footer-li li a {
