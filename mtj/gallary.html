@@ -21,10 +21,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/simple-lightbox.css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="svg/svg.js"></script>
   <script src="js/slick.js"></script>
+
+  <script src="js/simple-lightbox.min.js"></script>
+  <script src="js/simple-lightbox.legacy.min.js"></script>
+  <script src="js/simple-lightbox.jquery.min.js"></script>
+
+
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -91,8 +100,9 @@
   <section>
     <div class="bw-header">
       <div class="container">
-        <a href="#" class="logo">
-          <img src="./images/logo.png">
+       <a href="index.html" class="logo">
+          <img class="l-show" src="./images/logo.png">
+          <img class="x-show" src="./images/logo-xl.png">
         </a>
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
@@ -117,7 +127,7 @@
                   <a href="newsevents.html">NEWS & EVENTS</a>
                 </li>
                 <li class="active">
-                  <a href="gallary.html">GALLARY</a>
+                  <a href="gallary.html">GALLERY</a>
                 </li>
                 <li >
                   <a href="contact.html">Contact us</a>
@@ -143,7 +153,7 @@
        <div class="container">
         <div class="breadcrum">
           <div class="title">Gallary<br>
-            <a href="">Home  /  </a>
+            <a href="index.html">Home  /  </a>
             <a href="">Gallary</a>
           </div>
         </div>
@@ -153,25 +163,25 @@
   <section class="gallary-view">
     <div class="container">
       <div class="row">
+        <div class="gallery">
         <div class="column">
-          <img src="images/aboutus.jpg" alt="">
-          <img src="images/info-2.jpg" alt="">
+          <a href="images/aboutus.jpg" class="big"><img src="images/aboutus.jpg" alt="" title="" /></a>
+          <a href="images/info-2.jpg"><img src="images/info-2.jpg" alt="" title=""/></a>
         </div>
-        <div class="column">
-          <img src="images/info-4.jpg" alt="">
-          <img src="images/info-6.jpg" alt="">
-          <img src="images/info-3.jpg" alt="">
+        <div class="column ">
+          <a href="images/info-4.jpg"><img src="images/info-4.jpg" alt="" title=""/></a>
+          <a href="images/info-6.jpg"><img src="images/info-6.jpg" alt="" title=""/></a>
+          <a href="images/info-3.jpg"><img src="images/info-3.jpg" alt="" title=""/></a>
         </div>
-        <div class="column">
-          <img src="images/info-5.jpg" alt="">
-          <img src="images/info-7.jpg" alt="">
-          <img src="images/info-8.jpg" alt="">
+        <div class="column column-1">
+          <a href="images/info-5.jpg"><img src="images/info-5.jpg" alt="" title=""/></a>
+          <a href="images/info-6.jpg"><img src="images/info-6.jpg" alt="" title=""/></a>
         </div>
-        <div class="column">
-          <img src="images/info-4.jpg" alt="">
-          <img src="images/info-6.jpg" alt="">
-          <img src="images/info-3.jpg" alt="">
+         <div class="column column-2">
+          <a href="images/info-2.jpg"><img src="images/info-2.jpg" alt="" title=""/></a>
+          <a href="images/aboutus.jpg"><img src="images/aboutus.jpg" alt="" title="" /></a>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -329,16 +339,16 @@
                 <a href="aboutus.html">About Us</a>
               </li>
               <li>
-                <a href="newsevents.html">NEWS & EVENTS</a>
+                <a href="newsevents.html">News & Events</a>
               </li>
               <li >
-                <a href="gallary.html">GALLARY</a>
+                <a href="gallary.html">Gallery</a>
               </li>
               <li >
-                <a href="contact.html">Contact us</a>
+                <a href="contact.html">Contact Us</a>
               </li>
             </ul>
-            <button type="submit" class="btn btn-primary">Donate Now ></button>
+            <button class="btn btn-primary form-btn">Donate Now ></button> 
             <div class="social-media">
               <a href="#">
                 <i class="icon icon-small">
@@ -385,6 +395,16 @@
         </div>
       </footer>
     </div>
+    </div>
+  </section>
+  <section>
+    <div class="copyright">
+      <div class="container">
+        <p>
+          Copyright © 2022, melanietaylor.com, All rights reserved.
+        </p>
+      </div>
+      </div>
   </section>
 
 </body>
@@ -448,6 +468,11 @@ $('.closed').on('click', function() {
   document.getElementsByTagName("body")[0].removeAttribute("class");
   return false;
 });
+(function() {
+        var $gallery = new SimpleLightbox('.gallery .column a', {});
+        var $gallery = new SimpleLightbox('.gallery .column-1 a', {});
+        var $gallery = new SimpleLightbox('.gallery .column-2 a', {});
+    })();
 </script>
 
 </html>
