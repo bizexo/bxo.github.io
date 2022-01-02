@@ -28,6 +28,12 @@ h2 {
 .form-group, .form-inline {
   margin-bottom: 20px; }
 
+.x-show {
+  display: none; }
+
+.l-show {
+  display: block; }
+
 .form-inline .form-group {
   width: 48%; }
   .form-inline .form-group:nth-child(2) {
@@ -83,10 +89,10 @@ svg:not(:root) {
   border: 1px solid #772ab3; }
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background: #570596 !important;
-    border: 2px solid #570596 !important; }
+    border: 1px solid #570596 !important; }
 
 .btn-default {
-  border: 2px solid #772ab3;
+  border: 1px solid #772ab3;
   color: #772ab3; }
 
 ul {
@@ -233,16 +239,25 @@ section h1, section p {
     /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px; }
+  .gallary-view .gallery {
+    display: flex; }
   .gallary-view .column {
     -ms-flex: 25%;
     /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px; }
-  .gallary-view .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%; }
+    .gallary-view .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      transition: all .2s;
+      opacity: .8;
+      position: relative; }
+    .gallary-view .column a:hover img {
+      transform: scale(1.1);
+      opacity: 1;
+      z-index: 1; }
   @media screen and (max-width: 800px) {
     .gallary-view .column {
       -ms-flex: 50%;
@@ -465,7 +480,8 @@ section h1, section p {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
 
 .inner-section-03 {
   background: #dfeaff;
@@ -655,26 +671,29 @@ ul.list {
     border-left: 1px solid rgba(255, 255, 255, 0.2); }
 
 @media (max-width: 780px) {
+  .x-show {
+    display: block; }
+  .l-show {
+    display: none; }
   .bw-header {
+    height: 55px;
     display: block;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5); }
     .bw-header .btn {
-      top: 100px;
       z-index: 0;
       right: 15px;
       top: 0px;
-      border: none;
       padding: 5px 12px; }
     .bw-header.fixed {
       position: relative; }
     .bw-header .logo {
       left: 15px;
       top: 0px;
-      height: 37px;
       background: none;
       box-shadow: none;
-      width: 24%;
       padding: 0px; }
+      .bw-header .logo img {
+        width: 70%; }
   .bread-crum {
     margin: 0; }
   .section-02 {
@@ -688,15 +707,21 @@ ul.list {
     display: none; }
   .navbar {
     min-height: auto;
-    right: 60px; }
-    .navbar .navbar-toggle {
-      margin: 0px; }
-    .navbar .navbar-nav li {
-      margin: 10px 0px; }
-  .navbar-inverse {
+    right: 75px;
+    border-radius: 5px;
     background: #333333;
     display: table;
-    float: right; }
+    position: absolute; }
+    .navbar .navbar-toggle {
+      margin: 0px;
+      padding: 10px;
+      background: #772ab3;
+      border: 1px solid #772ab3; }
+      .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+        background: #570596;
+        border: 1px solid #570596; }
+    .navbar .navbar-nav li {
+      margin: 10px 0px; }
   .donation-form {
     width: 100%;
     overflow-y: auto;
@@ -726,10 +751,12 @@ ul.list {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 0px;
     margin: 15px 0px; }
-  .main-banner #myCarousel {
-    margin-left: 0px; }
-    .main-banner #myCarousel .carousel-caption {
-      width: 100%; }
+  .main-banner {
+    background-position: left top; }
+    .main-banner #myCarousel {
+      margin-left: 0px; }
+      .main-banner #myCarousel .carousel-caption {
+        width: 100%; }
   .picsum-img-wrapper img {
     width: auto; } }
 
