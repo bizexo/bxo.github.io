@@ -227,10 +227,8 @@ section h1, section p {
     margin-bottom: 15px; }
 
 .gallary-view {
-  margin-top: 50px;
-  /* Create four equal columns that sits next to each other */
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+  margin: 50px 0px;
+  /* Create four equal columns that sits next to each other */ }
   .gallary-view .row {
     display: -ms-flexbox;
     /* IE10 */
@@ -240,12 +238,13 @@ section h1, section p {
     flex-wrap: wrap;
     padding: 0 4px; }
   .gallary-view .gallery {
-    display: flex; }
+    display: flex;
+    width: 50%; }
   .gallary-view .column {
-    -ms-flex: 25%;
+    -ms-flex: 100%;
     /* IE10 */
-    flex: 25%;
-    max-width: 25%;
+    flex: 100%;
+    max-width: 100%;
     padding: 0 4px; }
     .gallary-view .column img {
       margin-top: 8px;
@@ -258,16 +257,6 @@ section h1, section p {
       transform: scale(1.1);
       opacity: 1;
       z-index: 1; }
-  @media screen and (max-width: 800px) {
-    .gallary-view .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%; } }
-  @media screen and (max-width: 600px) {
-    .gallary-view .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%; } }
 
 .section-02 {
   background: #f2f3f4;
@@ -317,7 +306,7 @@ section h1, section p {
     .news-events-view .nav-tabs li a {
       border: none;
       border-bottom: 2px solid transparent;
-      padding: 10px 50px 8px;
+      padding: 10px 70px 8px;
       font-weight: 600; }
     .news-events-view .nav-tabs li.active a, .news-events-view .nav-tabs li.active a:hover, .news-events-view .nav-tabs li.active a:focus {
       border: none;
@@ -342,6 +331,22 @@ section h1, section p {
   margin: 0;
   color: #333333;
   font-size: 20px; }
+
+.news-events-view-more img {
+  margin-top: 15px; }
+
+.news-events-view-more .event-grid .card {
+  background: #fff;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 20px;
+  border-radius: 5px; }
+  .news-events-view-more .event-grid .card span {
+    font-size: 14px; }
+  .news-events-view-more .event-grid .card h5 {
+    font-size: 24px;
+    padding: 15px 0px 5px; }
+  .news-events-view-more .event-grid .card a {
+    padding-bottom: 10px; }
 
 #myCarousel-1 {
   height: 500px; }
@@ -446,7 +451,7 @@ section h1, section p {
   padding: 50px 0 10px; }
   .news-events-view-more .card-title {
     font-weight: 500;
-    font-size: 18px; }
+    font-size: 24px; }
   .news-events-view-more .row {
     border-top: 1px dashed #ccc;
     padding-top: 50px; }
@@ -626,7 +631,7 @@ ul.list {
   .footer .btn {
     border: 1px solid #fff !important;
     padding: 6px 12px; }
-  .footer h4, .footer p, .footer h5 {
+  .footer h4, .footer p, .footer h5, .footer a {
     color: #fff; }
   .footer h4 {
     font-size: 20px;
@@ -671,6 +676,12 @@ ul.list {
     border-left: 1px solid rgba(255, 255, 255, 0.2); }
 
 @media (max-width: 780px) {
+  .gallary-view .gallery {
+    width: 100%; }
+    .gallary-view .gallery .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%; }
   .x-show {
     display: block; }
   .l-show {
