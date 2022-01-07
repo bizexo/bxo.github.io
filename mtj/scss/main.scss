@@ -967,7 +967,6 @@ ul.list {
 		min-height: auto;
 		right: 75px;
 		border-radius:5px;
-		background: #333333;
 		display:table;
 		position:absolute;
 		.navbar-toggle{
@@ -983,6 +982,17 @@ ul.list {
 		.navbar-nav{
 			li{
 				margin:10px 0px;
+			}
+		}
+		.navbar-collapse{
+			background: #101010;
+			position: fixed;
+			left: 0;
+			top:55px;
+			right: 0px !important;
+			height: calc(100vh);
+			.navbar-nav{
+				width:100%;
 			}
 		}
 	}
