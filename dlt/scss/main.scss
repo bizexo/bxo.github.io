@@ -2,6 +2,11 @@ body {
 	color:#333333;
 	text-shadow: none !important;
 	font-family: 'Roboto', sans-serif;
+	background: -webkit-linear-gradient(top, rgb(24, 26, 77) 0%, rgb(89, 28, 56) 40%, rgb(131, 30, 41) 60%, rgb(195, 33, 20) 100%);
+	background: -o-linear-gradient(top, rgb(24, 26, 77) 0%, rgb(89, 28, 56) 40%, rgb(131, 30, 41) 60%, rgb(195, 33, 20) 100%);
+	background: -ms-linear-gradient(top, rgb(24, 26, 77) 0%, rgb(89, 28, 56) 40%, rgb(131, 30, 41) 60%, rgb(195, 33, 20) 100%);
+	background: -moz-linear-gradient(top, rgb(24, 26, 77) 0%, rgb(89, 28, 56) 40%, rgb(131, 30, 41) 60%, rgb(195, 33, 20) 100%);
+	background: linear-gradient(to bottom, rgb(24, 26, 77) 0%, rgb(89, 28, 56) 40%, rgb(131, 30, 41) 60%, rgb(195, 33, 20) 100%);
 }
 
 svg {
@@ -86,7 +91,7 @@ li{
 	}  
 }
 .navbar-inverse{
-	background:#da5004;
+	background:none;
 	border:none;
 	margin:0; 
 	.navbar-nav{
@@ -104,52 +109,28 @@ li{
 }
 
 .lable-strip{
-	background:#da5004;
+	background:#fff;
 	h2{  
-		color:#fff;
+		color:#000000;
 		font-weight:bold;
 		text-align:center;
-		background:#333333;
 		padding: 18px 0px;
 		position: relative;
 		margin: 0 50px; 
-	
-	.triangle-left {
-		width: 0;
-		height: 0;
-		border-top: 34px solid transparent;
-		border-right: 25px solid #333333;
-		border-bottom: 34px solid transparent;
-		position: absolute;
-		left:-25px; 
-		top:0px
-	}
-	.triangle-right {
-		width: 0;
-		height: 0;
-		border-top: 34px solid transparent;
-		border-left: 25px solid #333333;
-		border-bottom: 34px solid transparent;
-		position: absolute;
-		right:-25px;
-		top:0px
-	}
 }
 }
 
 .services-info{
 	margin:50px 0;
-	.circle{
-		overflow:hidden;
-		border-radius:50%; 
-		width: 300px;
-		height: 300px;
+	img{
+		width:100%;
 	}
 	.title-heading { 
 		text-align:center;
 		font-size:20px; 
 		font-weight: bold; 
 		margin-top:20px;
+		color:#fff;
 	}
 }
 
@@ -160,22 +141,15 @@ li{
 		width:100%;
 	}
 	.col{
-		background:#f8f7f7; 
 		margin:0px; 
-		padding:0px;
-		&.space-manage{ 
-			border-left:5px solid #e7430a; 
-			padding:25px;
-		}
+		padding:25px; 
 
 	}
 }
 
-
 .g-o{
-	margin-top:50px;
 	padding:30px 0 60px;
-	background:#f8f7f7; 
+	background:#f0efef; 
 }
 
 .c-o{
@@ -250,7 +224,6 @@ ul.list {
 }
 
 .main-banner {
-	background: url(../images/banner-1.jpg) no-repeat top center fixed; 
 	background-size: cover;
 	.container{
 		position: relative; 
@@ -299,7 +272,7 @@ ul.list {
 }
 
 .footer{
-	border-top:5px solid #000; 
+	background:#fff;
 	padding:25px 0 0; 
 	h3{ 
 		color:#000;
