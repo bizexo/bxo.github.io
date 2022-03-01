@@ -1,13 +1,17 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   color: #333333;
   text-shadow: none !important;
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   background: -webkit-linear-gradient(top, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%);
   background: -o-linear-gradient(top, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%);
   background: -ms-linear-gradient(top, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%);
   background: -moz-linear-gradient(top, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%);
-  background: linear-gradient(to bottom, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%); }
+  background: linear-gradient(to bottom, #181a4d 0%, #591c38 40%, #831e29 60%, #c32114 100%);
+  text-shadow: none; }
 
 svg {
   vertical-align: middle;
@@ -57,6 +61,10 @@ h1 {
   color: #000;
   margin: 50px 0; }
 
+h2 {
+  font-size: 36px;
+  color: #000; }
+
 ul {
   padding: 0px; }
 
@@ -64,12 +72,12 @@ li {
   list-style-type: none; }
 
 .custom-header {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
   .custom-header .logo {
     display: inline-block;
     justify-content: left;
-    font-size: 47px;
+    font-size: 28px;
     color: #fff; }
     .custom-header .logo span {
       font-weight: 700; }
@@ -78,8 +86,7 @@ li {
     margin: 0px; }
   .custom-header #navbar {
     display: inline-block !important;
-    float: right;
-    margin-top: 10px; }
+    float: right; }
 
 .navbar-inverse {
   background: none;
@@ -93,18 +100,19 @@ li {
       color: #fff;
       text-shadow: none;
       text-transform: uppercase;
-      font-size: 26px; }
+      font-size: 14px; }
 
 .lable-strip {
   padding: 30px 0;
   background: #fff; }
   .lable-strip h2 {
     color: #000000;
-    font-weight: bold;
     text-align: center;
     padding: 18px 0px;
     position: relative;
     margin: 0 50px; }
+  .lable-strip h4 {
+    font-weight: 700; }
 
 .services-info {
   margin: 50px 0; }
@@ -112,7 +120,7 @@ li {
     width: 100%; }
   .services-info .title-heading {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
     color: #fff;
@@ -120,13 +128,16 @@ li {
 
 .our-achiememnts {
   display: flex; }
+  .our-achiememnts p {
+    line-height: 30px;
+    margin-top: 30px; }
   .our-achiememnts img {
     width: 100%;
     border-radius: 15px; }
   .our-achiememnts .col {
     margin: 0px;
     padding: 25px; }
-  .our-achiememnts h2 {
+  .our-achiememnts h4 {
     margin-top: 0px;
     font-weight: 700; }
 
@@ -232,7 +243,9 @@ ul.list {
       color: #000;
       text-align: right;
       margin: 0px 0 0 30px;
-      font-size: 47px; }
+      font-size: 47px;
+      font-weight: 700;
+      text-shadow: none; }
     .main-banner .carousel-caption h4 {
       color: #c91406;
       text-align: right;
@@ -241,7 +254,7 @@ ul.list {
 
 .short-contact-info {
   color: #ffc500;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   white-space: pre-wrap;
   line-height: 28px;
@@ -252,11 +265,10 @@ ul.list {
   background: #fff;
   padding: 25px 0 0; }
   .footer h2 {
-    margin: 35px 0 30px;
-    font-size: 55px; }
+    margin: 35px 0 30px; }
   .footer h3 {
     color: #000;
-    font-size: 34px;
+    font-size: 18px;
     font-weight: 700; }
   .footer svg {
     fill: #e7430a; }
