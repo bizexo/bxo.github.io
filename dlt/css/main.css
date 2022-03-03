@@ -71,6 +71,14 @@ ul {
 li {
   list-style-type: none; }
 
+.bullet {
+  margin: 0px;
+  padding: 0px; }
+  .bullet li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0px; }
+
 #myBtn {
   display: none;
   /* Hidden by default */
@@ -104,21 +112,24 @@ li {
   /* Add a dark-grey background on hover */ }
 
 .custom-header {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 15px; }
   .custom-header .logo {
     display: inline-block;
     justify-content: left;
     font-size: 28px;
-    color: #fff; }
+    color: #fff;
+    font-family: arial; }
     .custom-header .logo span {
       font-weight: 700; }
   .custom-header h2 {
     text-transform: uppercase;
     margin: 0px; }
   .custom-header #navbar {
-    display: inline-block !important;
     float: right; }
+
+.navbar-header {
+  float: right; }
 
 .navbar-inverse {
   background: none;
@@ -132,7 +143,8 @@ li {
       color: #fff;
       text-shadow: none;
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 16px;
+      font-weight: 700; }
 
 .lable-strip {
   padding: 30px 0;
@@ -149,7 +161,8 @@ li {
 .services-info {
   margin: 50px 0; }
   .services-info img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 15px; }
   .services-info .title-heading {
     text-align: center;
     font-size: 16px;
@@ -240,16 +253,7 @@ ul.list {
     top: 0px;
     z-index: 9;
     width: 220px;
-    height: 265px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+78,0+100 */
-    background: -moz-linear-gradient(top, white 0%, white 78%, rgba(255, 255, 255, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, white 0%, white 78%, rgba(255, 255, 255, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, white 0%, white 78%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-    /* IE6-9 */ }
+    height: 265px; }
     .main-banner .logo img {
       width: 80%;
       text-align: center;
@@ -266,23 +270,23 @@ ul.list {
       background: #9a9a9a; }
       .main-banner .carousel-indicators li.active {
         background: #da5004; }
+    .main-banner .carousel-indicators .item {
+      height: 800px; }
   .main-banner .carousel-caption {
     padding: 15px;
-    right: 70px;
-    left: auto;
-    top: 40%; }
+    left: -62px;
+    bottom: 0;
+    transform: skew(20deg);
+    widows: 70%;
+    background: rgba(245, 0, 0, 0.5); }
     .main-banner .carousel-caption h3 {
-      color: #000;
-      text-align: right;
-      margin: 0px 0 0 30px;
+      color: #fff;
+      text-align: left;
+      margin: 0px 0 0 70px;
       font-size: 47px;
       font-weight: 700;
-      text-shadow: none; }
-    .main-banner .carousel-caption h4 {
-      color: #c91406;
-      text-align: right;
-      margin: 0px 0 0 30px;
-      font-size: 33px; }
+      text-shadow: none;
+      transform: skew(-20deg); }
 
 .short-contact-info {
   color: #ffc500;
@@ -292,6 +296,8 @@ ul.list {
   line-height: 28px;
   margin-top: 70px;
   margin-bottom: 0px; }
+  .short-contact-info span {
+    margin: 0 15px; }
 
 .footer {
   background: #fff;
@@ -309,6 +315,19 @@ ul.list {
     padding: 10px 0; }
     .footer .footer-li li a {
       color: #593a00; }
+  .footer .ft-logo {
+    width: 50%;
+    margin: 0 auto;
+    display: table; }
+
+.social-network {
+  display: flex; }
+  .social-network a {
+    margin-right: 15px;
+    display: flex;
+    align-self: center; }
+    .social-network a:last-child {
+      margin-right: 0px; }
 
 .copyright {
   background: #161a4e;
@@ -320,13 +339,16 @@ ul.list {
 @media (max-width: 576px) {
   .navbar-inverse {
     background: #333333; }
+  .custom-header #navbar {
+    float: right;
+    width: 100%;
+    margin-top: 13px; }
+  .social-network {
+    justify-content: center; }
   .services-info .circle {
     margin: 0 auto; }
-  .lable-strip h2 {
-    font-size: 12px; }
-    .lable-strip h2 .triangle-left, .lable-strip h2 .triangle-right {
-      border-top: 24px solid transparent;
-      border-bottom: 24px solid transparent; }
+  .short-contact-info span {
+    display: block; }
   .our-achiememnts {
     display: block; }
   .col {
