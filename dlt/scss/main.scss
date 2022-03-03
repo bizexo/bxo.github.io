@@ -85,6 +85,15 @@ li{
 	list-style-type: none; 
 }
 
+.bullet{
+	margin:0px;
+	padding:0px;
+	li{
+		list-style-type: disc;  	 
+		list-style-position: inside;
+		padding: 5px 0px;
+	}
+}
 
 #myBtn {
 	display: none; /* Hidden by default */
@@ -108,13 +117,14 @@ li{
 
 
 .custom-header{ 
-	padding-top:15px;
+	padding-top:20px;
 	padding-bottom:15px;
 	.logo { 
 		display: inline-block ; 
 		justify-content: left;
 		font-size: 28px; 
 		color:#fff;
+		font-family: arial;
 	span{
 		font-weight: 700;
 	}
@@ -124,9 +134,12 @@ li{
 		margin: 0px; 
 	}  
 	#navbar{
-		display: inline-block !important;
 		float: right; 
 	}
+}
+
+.navbar-header{
+	float: right; 
 }
 .navbar-inverse{
 	background:none;
@@ -142,7 +155,8 @@ li{
 				color:#fff; 
 				text-shadow: none;
 				text-transform: uppercase; 
-				font-size:14px;
+				font-size:16px;
+				font-weight: 700;
 			}
 		}
 	}
@@ -167,6 +181,7 @@ h4{
 	margin:50px 0;
 	img{
 		width:100%;
+		border-radius: 15px;
 	}
 	.title-heading { 
 		text-align:center;
@@ -292,19 +307,13 @@ ul.list {
 		z-index:9;
 		width: 220px;
 		height: 265px;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+78,0+100 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 78%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 78%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-img{
-			width:80%;
-			text-align: center;
-			margin:0 auto;
-			display:table;
+	img{
+				width:80%;
+				text-align: center;
+				margin:0 auto;
+				display:table;
+			}
 		}
-	}
 .plane-baneer{
 	img{
 		width:100%; 
@@ -321,26 +330,27 @@ img{
 				background:#da5004;
 			}
 		}
+		.item{
+			height:800px;
+		}
 	}
 	.carousel-caption{
 			padding:15px;
-			right: 70px;
-			left: auto;
-			top: 40%;
+			left: -62px;
+			bottom:0;
+			transform: skew(20deg);
+			widows: 70%;
+			background:rgba(245,0,0, .5);
 		h3{
-			color:#000;
-			text-align: right;
-			margin:0px 0 0 30px;
+			color:#fff;
+			text-align: left;
+			margin:0px 0 0 70px;
 			font-size:47px; 
 			font-weight: 700;
 			text-shadow: none; 
+			transform: skew(-20deg);
 		}
-		h4{
-			color:#c91406;
-			text-align: right;
-			margin:0px 0 0 30px;
-			font-size:33px; 
-		}
+		
 	}
 }
 
@@ -351,8 +361,12 @@ img{
 	white-space: pre-wrap;
     line-height: 28px;
     margin-top: 70px;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
+	span{
+		margin:0 15px;
+	}
 }
+
 
 .footer{
 	background:#fff;
@@ -377,8 +391,24 @@ img{
 			}
 		}
 	}
+	.ft-logo{
+		width:50%;
+		margin:0 auto;
+		display:table; 
+	}
 }
 
+.social-network{
+		display: flex;
+		a{
+			margin-right:15px; 
+			display: flex;
+			align-self: center;
+			&:last-child{
+				margin-right:0px;
+			}
+		}
+}
 .copyright{
 	background:#161a4e; 
 	color:#fff;	  
@@ -394,20 +424,26 @@ img{
 	.navbar-inverse{
 		background: #333333;
 	}
+	.custom-header #navbar {
+		float: right;
+		width: 100%;
+		margin-top: 13px;
+	}
+	.social-network {
+		justify-content: center;
+	}
 	.services-info{
 		.circle{
 			margin:0 auto;   
 		}
 	}
-	.lable-strip {
-		h2{
-			font-size:12px;
-			.triangle-left, .triangle-right { 
-				border-top: 24px solid transparent;
-   				 border-bottom: 24px solid transparent;
-			}
+
+	.short-contact-info{
+		span{
+			display:block;
 		}
 	}
+	
 	.our-achiememnts{
 		display:block; 
 	}
