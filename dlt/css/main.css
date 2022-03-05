@@ -171,6 +171,9 @@ li {
     color: #fff;
     text-transform: uppercase; }
 
+#service {
+  margin-top: 50px; }
+
 .our-achiememnts {
   display: flex; }
   .our-achiememnts p {
@@ -247,6 +250,8 @@ ul.list {
   .main-banner .carousel-inner {
     border-radius: 15px;
     overflow: hidden; }
+    .main-banner .carousel-inner .item {
+      height: 650px; }
   .main-banner .logo {
     position: absolute;
     right: 50px;
@@ -270,8 +275,6 @@ ul.list {
       background: #9a9a9a; }
       .main-banner .carousel-indicators li.active {
         background: #da5004; }
-    .main-banner .carousel-indicators .item {
-      height: 800px; }
   .main-banner .carousel-caption {
     padding: 15px;
     left: -62px;
@@ -301,7 +304,7 @@ ul.list {
 
 .footer {
   background: #fff;
-  padding: 25px 0 0; }
+  padding: 25px 0 40px; }
   .footer h2 {
     margin: 35px 0 30px; }
   .footer h3 {
