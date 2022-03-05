@@ -252,6 +252,10 @@ ul.list {
     overflow: hidden; }
     .main-banner .carousel-inner .item {
       height: 650px; }
+      .main-banner .carousel-inner .item img {
+        object-fit: fill;
+        height: 650px;
+        width: 100%; }
   .main-banner .logo {
     position: absolute;
     right: 50px;
@@ -286,7 +290,7 @@ ul.list {
       color: #fff;
       text-align: left;
       margin: 0px 0 0 70px;
-      font-size: 47px;
+      font-size: 40px;
       font-weight: 700;
       text-shadow: none;
       transform: skew(-20deg); }
@@ -307,10 +311,13 @@ ul.list {
   padding: 25px 0 40px; }
   .footer h2 {
     margin: 35px 0 30px; }
+  .footer p {
+    font-size: 16px; }
   .footer h3 {
     color: #000;
     font-size: 18px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 20px; }
   .footer svg {
     fill: #e7430a; }
   .footer .footer-li li {
@@ -345,7 +352,9 @@ ul.list {
   .custom-header #navbar {
     float: right;
     width: 100%;
-    margin-top: 13px; }
+    margin-top: 13px;
+    margin: 0px;
+    text-align: center; }
   .social-network {
     justify-content: center; }
   .services-info .circle {
