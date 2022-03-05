@@ -305,6 +305,11 @@ ul.list {
 		overflow: hidden; 
 		.item{
 			height:650px; 
+			img{
+				object-fit: fill;
+				height: 650px;
+				width: 100%;
+			}
 		}
 	}
 	.logo{
@@ -350,7 +355,7 @@ ul.list {
 			color:#fff;
 			text-align: left;
 			margin:0px 0 0 70px;
-			font-size:47px; 
+			font-size:40px; 
 			font-weight: 700;
 			text-shadow: none; 
 			transform: skew(-20deg);
@@ -379,10 +384,14 @@ ul.list {
 	h2{
 		margin:35px 0 30px;
 	}
+	p{
+		font-size:16px;
+	}
 	h3{ 
 		color:#000;
 		font-size:18px; 
 		font-weight:700;  
+		margin-bottom:20px;
 	}
 	svg{
 		fill: #e7430a;
@@ -433,6 +442,8 @@ ul.list {
 		float: right;
 		width: 100%;
 		margin-top: 13px;
+		margin: 0px;
+		text-align: center;
 	}
 	.social-network {
 		justify-content: center;
