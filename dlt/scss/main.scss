@@ -193,6 +193,10 @@ h4{
 	}
 }
 
+#service{
+	margin-top:50px;
+}
+
 .our-achiememnts {
 	display: flex;
 
@@ -299,6 +303,9 @@ ul.list {
 	.carousel-inner{
 		border-radius:15px; 
 		overflow: hidden; 
+		.item{
+			height:650px; 
+		}
 	}
 	.logo{
 		position: absolute;
@@ -330,9 +337,7 @@ ul.list {
 				background:#da5004;
 			}
 		}
-		.item{
-			height:800px;
-		}
+		
 	}
 	.carousel-caption{
 			padding:15px;
@@ -370,7 +375,7 @@ ul.list {
 
 .footer{
 	background:#fff;
-	padding:25px 0 0; 
+	padding:25px 0 40px; 
 	h2{
 		margin:35px 0 30px;
 	}
