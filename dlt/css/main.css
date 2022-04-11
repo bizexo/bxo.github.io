@@ -375,7 +375,9 @@ ul.list {
     margin: 0 auto;
     text-align: center; }
   #myCarousel {
-    display: none; }
+    margin-top: 15px; }
+    #myCarousel .carousel-inner .item img {
+      object-fit: cover; }
   .picsum-img-wrapper img {
     width: auto; } }
 

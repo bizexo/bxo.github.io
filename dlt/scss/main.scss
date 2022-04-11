@@ -486,8 +486,15 @@ ul.list {
 	}
 
 	#myCarousel{
-		display:none;
+		margin-top: 15px;
+		.carousel-inner {
+		.item {
+			img{
+				object-fit: cover;
+			}
 		}
+	}
+	}
 	  
 	.picsum-img-wrapper{
 		img{
