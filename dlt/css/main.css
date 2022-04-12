@@ -348,7 +348,10 @@ ul.list {
 
 @media (max-width: 576px) {
   .navbar-inverse {
-    background: #333333; }
+    background: none; }
+    .navbar-inverse .navbar-toggle {
+      margin-top: 2px;
+      margin-bottom: 2px; }
   .custom-header #navbar {
     float: right;
     width: 100%;
@@ -374,10 +377,25 @@ ul.list {
     display: table;
     margin: 0 auto;
     text-align: center; }
-  #myCarousel {
+  .main-banner .logo {
+    right: 5px; }
+    .main-banner .logo img {
+      width: 70%; }
+  .main-banner #myCarousel {
     margin-top: 15px; }
-    #myCarousel .carousel-inner .item img {
-      object-fit: cover; }
+    .main-banner #myCarousel .carousel-caption {
+      width: 100%;
+      left: 0px;
+      transform: none; }
+      .main-banner #myCarousel .carousel-caption h3 {
+        font-size: 24px;
+        transform: none;
+        margin: 0px; }
+    .main-banner #myCarousel .carousel-inner .item {
+      height: 300px; }
+      .main-banner #myCarousel .carousel-inner .item img {
+        object-fit: cover;
+        height: 300px; }
   .picsum-img-wrapper img {
     width: auto; } }
 

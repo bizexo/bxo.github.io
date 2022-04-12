@@ -436,7 +436,11 @@ ul.list {
 
 @media (max-width: 576px) {
 	.navbar-inverse{
-		background: #333333;
+		background: none;
+		.navbar-toggle{
+			margin-top:2px;
+			margin-bottom:2px;
+		}
 	}
 	.custom-header #navbar {
 		float: right;
@@ -485,17 +489,39 @@ ul.list {
 		}
 	}
 
+	.main-banner {
+		.logo{
+			right:5px;
+			img{
+				width:70%;
+			}
+		}
+		
+	}
+	.main-banner{
 	#myCarousel{
 		margin-top: 15px;
+		.carousel-caption{
+			width:100%;
+			left:0px;
+			transform:none;
+			h3{
+				font-size:24px;
+				transform:none;
+				margin:0px;
+			}
+		}
 		.carousel-inner {
 		.item {
+			height:300px;
 			img{
 				object-fit: cover;
+				height:300px;
 			}
 		}
 	}
 	}
-	  
+}
 	.picsum-img-wrapper{
 		img{
 			width: auto;
