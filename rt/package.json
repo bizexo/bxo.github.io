@@ -1,5 +1,5 @@
 {
-  "name": "main_scss",
+  "name": "rt",
   "version": "1.0.0",
   "description": "scss",
   "main": "index.js",
@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch scss -o css"
   },
-  "author": "Abhishek V. Kadam",
+  "author": "abhi",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.1"
   }
 }
