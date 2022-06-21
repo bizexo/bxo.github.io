@@ -109,8 +109,8 @@ li {
   background: #fff; }
 
 .custom-header {
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .custom-header .logo {
     display: inline-block;
     justify-content: left; }
@@ -167,6 +167,8 @@ li {
 .more-services-info .panel-body {
   overflow: hidden;
   padding: 0; }
+  .more-services-info .panel-body img {
+    width: 100%; }
 
 .more-services-info .panel-footer {
   background-color: #b90707;
@@ -181,7 +183,8 @@ li {
     font-size: 18px; }
 
 .services-info {
-  padding: 50px 0 10px; }
+  padding-top: 50px;
+  padding-bottom: 10px; }
   .services-info img {
     width: 100%;
     border-radius: 15px; }
@@ -384,23 +387,44 @@ ul.list {
     text-align: center; }
 
 @media (max-width: 576px) {
+  .custom-header {
+    padding: 15px 0px 0px; }
   .navbar-inverse {
-    background: none; }
+    background: #efeded;
+    min-height: 45px; }
+    .navbar-inverse .navbar-nav li a {
+      color: #000; }
+      .navbar-inverse .navbar-nav li a:hover {
+        color: #c20404; }
     .navbar-inverse .navbar-toggle {
-      margin-top: 2px;
-      margin-bottom: 2px; }
+      position: absolute;
+      right: 0;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+      .navbar-inverse .navbar-toggle:focus {
+        background-color: #bdbcbc; }
+      .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #060606; }
   .custom-header #navbar {
     float: right;
     width: 100%;
     margin-top: 13px;
     margin: 0px;
     text-align: center; }
+  .custom-header .logo {
+    display: block; }
+    .custom-header .logo a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .social-network {
     justify-content: center; }
   .services-info .circle {
     margin: 0 auto; }
-  .short-contact-info span {
-    display: block; }
+  .short-contact-info {
+    float: none;
+    display: table;
+    margin: 25px auto; }
   .our-achiememnts {
     display: block; }
   .col {
@@ -414,10 +438,12 @@ ul.list {
     display: table;
     margin: 0 auto;
     text-align: center; }
-  .main-banner .logo {
-    right: 5px; }
-    .main-banner .logo img {
-      width: 70%; }
+  .main-banner {
+    display: none; }
+    .main-banner .logo {
+      right: 5px; }
+      .main-banner .logo img {
+        width: 70%; }
   .main-banner #myCarousel {
     margin-top: 15px; }
     .main-banner #myCarousel .carousel-caption {
