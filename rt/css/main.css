@@ -88,7 +88,7 @@ li {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.5);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -139,7 +139,8 @@ li {
       color: #fff;
       text-shadow: none;
       text-transform: uppercase;
-      font-size: 16px; }
+      font-size: 16px;
+      padding-left: 50px; }
   .navbar-inverse .custom-header {
     padding: 0px; }
 
@@ -158,6 +159,9 @@ li {
 
 .about-us {
   margin: 50px 0; }
+  .about-us h2, .about-us p {
+    margin-bottom: 30px;
+    text-align: justify; }
 
 .full-img {
   overflow: hidden; }
@@ -313,17 +317,19 @@ ul.list {
     right: 0px;
     bottom: 30px;
     text-align: left;
-    left: auto; }
-    .main-banner .carousel-caption h2 {
-      font-size: 50px;
-      color: #fff;
-      font-weight: 700; }
+    left: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 650px; }
     .main-banner .carousel-caption h3 {
       color: #fff;
       text-align: left;
       font-size: 36px;
       font-weight: 700;
       text-shadow: none; }
+      .main-banner .carousel-caption h3 span {
+        font-size: 50px; }
 
 .short-contact-info {
   color: #000000;
@@ -339,6 +345,8 @@ ul.list {
   margin-top: 50px; }
   .footer .col {
     margin-bottom: 0; }
+    .footer .col:first-child {
+      padding: 0px; }
   .footer .mapouter {
     height: 100%;
     width: 100%; }
@@ -393,7 +401,8 @@ ul.list {
     background: #efeded;
     min-height: 45px; }
     .navbar-inverse .navbar-nav li a {
-      color: #000; }
+      color: #000;
+      padding-left: 15px; }
       .navbar-inverse .navbar-nav li a:hover {
         color: #c20404; }
     .navbar-inverse .navbar-toggle {
@@ -435,30 +444,28 @@ ul.list {
   .d-flex, .v-align {
     display: block; }
   .footer .d-flex {
-    display: table;
-    margin: 0 auto;
     text-align: center; }
-  .main-banner {
-    display: none; }
-    .main-banner .logo {
-      right: 5px; }
-      .main-banner .logo img {
-        width: 70%; }
-  .main-banner #myCarousel {
-    margin-top: 15px; }
-    .main-banner #myCarousel .carousel-caption {
-      width: 100%;
-      left: 0px;
-      transform: none; }
-      .main-banner #myCarousel .carousel-caption h3 {
-        font-size: 24px;
-        transform: none;
-        margin: 0px; }
-    .main-banner #myCarousel .carousel-inner .item {
+  .main-banner .logo {
+    right: 5px; }
+    .main-banner .logo img {
+      width: 70%; }
+  .main-banner #myCarousel .carousel-caption {
+    width: 100%;
+    left: 0px;
+    transform: none;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5); }
+    .main-banner #myCarousel .carousel-caption h3 {
+      font-size: 24px;
+      transform: none;
+      margin: 0px; }
+  .main-banner #myCarousel .carousel-inner .item {
+    height: 300px; }
+    .main-banner #myCarousel .carousel-inner .item img {
+      object-fit: cover;
       height: 300px; }
-      .main-banner #myCarousel .carousel-inner .item img {
-        object-fit: cover;
-        height: 300px; }
+  .main-banner #myCarousel .carousel-inner .picsum-img-wrapper {
+    height: auto; }
   .picsum-img-wrapper img {
     width: auto; } }
 
