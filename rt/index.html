@@ -86,7 +86,7 @@
 
     <div class="main-banner">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
         <div class="container">
 
 
@@ -146,8 +146,8 @@
     </div>
   </section>
 
-  <section class="services-info-section">
-    <div class="container services-info">
+  <section class="services-info-section" id="about">
+    <div class="container services-info reveal">
       <div class="row">
         <div class="col-md-4 col-lg-4 col-sm-12 col">
           <div class="circle">
@@ -174,7 +174,7 @@
     </div>
   </section>
 
-  <section id="about" class="about-us">
+  <section class="about-us">
     <div class="container">
       <div class="row">
         <div class="col-md-9 col-lg-9 col-sm-12">
@@ -195,7 +195,7 @@
   </section>
 
   <section id="service">
-    <div class="container">
+    <div class="container reveal">
       <div class="row more-services-info">
         <div class="col-md-4 col-lg-4 col-sm-12 col">
           <div class="panel-body">
@@ -327,6 +327,24 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 </script>
 
 </html>
