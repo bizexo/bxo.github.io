@@ -89,18 +89,6 @@ li{
 	}
 }
 
-/*card animation*/
-.reveal{
-	position: relative;
-	transform: translateY(150px);
-	opacity: 0;
-	transition: 1s all ease;
-  }
-  
-  .reveal.active{
-	transform: translateY(0);
-	opacity: 1;
-  }
 
 #myBtn {
 	display: none; /* Hidden by default */
@@ -155,6 +143,13 @@ li{
 	background:#333;
 	border:none;
 	margin:0; 
+
+	&.sticky{
+		position:fixed;
+		top:0px;
+		width:100%;
+		background: rgba(0,0,0,.6);
+	  }
 
 	.navbar-nav{
 		float: none;
@@ -529,6 +524,9 @@ ul.list {
 	.navbar-inverse{
 		background: #efeded;
 		min-height: 45px;
+		&.sticky{
+			background:#efeded;
+		}
 		.navbar-nav {
 			li {
 				a{

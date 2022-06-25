@@ -56,7 +56,7 @@
     </div>
   </section>
   <section>
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top" id="header">
       <div class="container custom-header">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -147,7 +147,7 @@
   </section>
 
   <section class="services-info-section" id="about">
-    <div class="container services-info reveal">
+    <div class="container services-info">
       <div class="row">
         <div class="col-md-4 col-lg-4 col-sm-12 col">
           <div class="circle">
@@ -195,7 +195,7 @@
   </section>
 
   <section id="service">
-    <div class="container reveal">
+    <div class="container">
       <div class="row more-services-info">
         <div class="col-md-4 col-lg-4 col-sm-12 col">
           <div class="panel-body">
@@ -328,23 +328,18 @@
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
-  function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  window.addEventListener('scroll', topNavFix);
+  let header = document.getElementById('header');
+  let sticky = header.offsetTop;
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
+  function topNavFix(){
+      if(window.pageYOffset > sticky){
+          header.classList.add('sticky')
+      }
+      else{
+        header.classList.remove('sticky');
+      }
   }
-}
-
-window.addEventListener("scroll", reveal);
 </script>
 
 </html>
