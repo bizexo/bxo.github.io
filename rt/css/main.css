@@ -4,8 +4,8 @@ html {
 body {
   color: #333333;
   text-shadow: none !important;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 14px; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
 
 svg {
   vertical-align: middle;
@@ -175,7 +175,8 @@ li {
 
 .more-services-info .panel-body {
   overflow: hidden;
-  padding: 0; }
+  padding: 0;
+  background: #c9c9c9; }
   .more-services-info .panel-body img {
     width: 100%; }
 
@@ -194,9 +195,12 @@ li {
 .services-info {
   padding-top: 50px;
   padding-bottom: 10px; }
-  .services-info img {
-    width: 100%;
+  .services-info .circle {
+    background: #c9c9c9;
+    overflow: hidden;
     border-radius: 15px; }
+  .services-info img {
+    width: 100%; }
   .services-info .title-heading {
     text-align: center;
     font-size: 16px;
@@ -343,7 +347,10 @@ ul.list {
   margin-top: 10px; }
   .short-contact-info .highlight {
     color: #c20404;
-    font-weight: 700; }
+    font-weight: 700;
+    border-right: 2px solid #000;
+    margin-right: 10px;
+    padding-right: 10px; }
 
 .footer {
   background: #f7f7f7;
@@ -400,6 +407,12 @@ ul.list {
     text-align: center; }
 
 @media (max-width: 576px) {
+  .short-contact-info .highlight {
+    display: block;
+    text-align: center;
+    border-right: none;
+    margin-right: 0px;
+    padding-right: 0px; }
   .custom-header {
     padding: 15px 0px 0px; }
   .navbar-inverse {
@@ -413,14 +426,16 @@ ul.list {
       .navbar-inverse .navbar-nav li a:hover {
         color: #c20404; }
     .navbar-inverse .navbar-toggle {
+      background-color: #c20404;
       position: absolute;
       right: 0;
       margin-top: 5px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      border: none; }
       .navbar-inverse .navbar-toggle:focus {
-        background-color: #bdbcbc; }
+        background-color: #c20404; }
       .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: #060606; }
+        background-color: #fff; }
   .custom-header #navbar {
     float: right;
     width: 100%;
@@ -463,9 +478,12 @@ ul.list {
     height: auto;
     background: rgba(0, 0, 0, 0.5); }
     .main-banner #myCarousel .carousel-caption h3 {
-      font-size: 24px;
+      font-size: 18px;
       transform: none;
       margin: 0px; }
+      .main-banner #myCarousel .carousel-caption h3 span {
+        font-size: 36px;
+        line-height: 64px; }
   .main-banner #myCarousel .carousel-inner .item {
     height: 300px; }
     .main-banner #myCarousel .carousel-inner .item img {
