@@ -114,10 +114,15 @@ li {
   .custom-header .logo {
     display: inline-block;
     justify-content: left; }
+    .custom-header .logo a {
+      text-decoration: none;
+      color: #000; }
     .custom-header .logo img {
-      width: 70%; }
+      width: 23%;
+      margin: -5px 10px 0 0; }
     .custom-header .logo span {
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 28px; }
   .custom-header h2 {
     text-transform: uppercase;
     margin: 0px; }
@@ -165,8 +170,7 @@ li {
 .about-us {
   margin: 50px 0; }
   .about-us h2, .about-us p {
-    margin-bottom: 30px;
-    text-align: justify; }
+    margin-bottom: 30px; }
 
 .full-img {
   overflow: hidden; }
@@ -428,8 +432,9 @@ ul.list {
     .navbar-inverse .navbar-nav li a {
       color: #000;
       padding-left: 15px; }
-      .navbar-inverse .navbar-nav li a:hover {
-        color: #c20404; }
+      .navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:active {
+        color: #c20404;
+        outline: none; }
     .navbar-inverse .navbar-toggle {
       background-color: #c20404;
       position: absolute;
