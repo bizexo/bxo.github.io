@@ -406,6 +406,11 @@ ul.list {
     padding: 15px 0;
     text-align: center; }
 
+@media (max-width: 1024px) {
+  .main-banner #myCarousel .carousel-caption h3 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px; } }
+
 @media (max-width: 576px) {
   .short-contact-info .highlight {
     display: block;
@@ -474,16 +479,13 @@ ul.list {
   .main-banner #myCarousel .carousel-caption {
     width: 100%;
     left: 0px;
-    transform: none;
-    height: auto;
-    background: rgba(0, 0, 0, 0.5); }
+    height: auto; }
     .main-banner #myCarousel .carousel-caption h3 {
       font-size: 18px;
-      transform: none;
       margin: 0px; }
       .main-banner #myCarousel .carousel-caption h3 span {
         font-size: 36px;
-        line-height: 64px; }
+        display: block; }
   .main-banner #myCarousel .carousel-inner .item {
     height: 300px; }
     .main-banner #myCarousel .carousel-inner .item img {
