@@ -523,7 +523,18 @@ ul.list {
 	} 
 }
 
-
+@media (max-width: 1024px) {
+	.main-banner{
+		#myCarousel{
+			.carousel-caption{
+				h3{
+					background: rgba(0,0,0, 0.5);
+					padding:15px;
+				}
+			}
+		}
+	}
+}
 
 @media (max-width: 576px) {
 	.short-contact-info {
@@ -637,16 +648,13 @@ ul.list {
 		.carousel-caption{
 			width:100%;
 			left:0px;
-			transform:none;
 			height: auto;
-    		background: rgba(0,0,0, 0.5);
 			h3{
 				span{
 					font-size:36px;
-					line-height:64px;
+					display: block;
 				}
 				font-size:18px;
-				transform:none;
 				margin:0px;
 			}
 		}
